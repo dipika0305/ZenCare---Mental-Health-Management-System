@@ -6,7 +6,7 @@ package model;
 
 import model.Emp.Employee;
 import model.UserAccount.UserAccount;
-import model.Role.SystemAdminRole;
+import model.Role.RoleSystemAdmin;
 
 
 /**
@@ -20,7 +20,7 @@ public class ConfigSys {
         EcoSys sys = EcoSys.getInstance();              
         Employee employee = sys.getEmployeeDir().createEmployee("sysadmin"); //Creates a Root User
         
-        UserAccount ua = sys.getUserAccountDir().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = sys.getUserAccountDir().createUserAccount("sysadmin", "sysadmin", employee, new RoleSystemAdmin());
         
         return sys;
     }

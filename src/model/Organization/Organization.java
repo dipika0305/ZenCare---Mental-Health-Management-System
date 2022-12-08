@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import model.Emp.EmployeeDirectory;
 import model.Role.Role;
 import model.UserAccount.UserAccountDirectory;
+import model.WorkQueue.WorkQueue;
 
 /**
  *
@@ -20,7 +21,8 @@ public abstract class Organization {
     private UserAccountDirectory userAccountDir;
     private int orgID;
     private static int counter=0;
-    
+    private WorkQueue workQueue;
+  
     public enum Type{
         Admin("Admin Organization"), 
         Doctor("Doctor Organization"),
@@ -34,8 +36,8 @@ public abstract class Organization {
         Nurse("Nurse"),
         Suppliments("Suppliments"),
         Acommittee("Allocatting Committee"),
-        Gcomittee("Granting Comittee")
-        ;
+        Gcomittee("Granting Comittee");
+        
         private String value;
         private Type(String value) {
             this.value = value;
@@ -47,7 +49,7 @@ public abstract class Organization {
 
     public Organization(String name) {
         this.name = name;
-//        workQueue = new WorkQueue();
+        workQueue = new WorkQueue();
         employeeDir = new EmployeeDirectory();
         userAccountDir = new UserAccountDirectory();
         orgID = counter;
@@ -74,6 +76,14 @@ public abstract class Organization {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
+
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
     }
 
     @Override

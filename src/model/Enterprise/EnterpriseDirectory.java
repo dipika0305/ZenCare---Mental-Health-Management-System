@@ -23,30 +23,39 @@ public class EnterpriseDirectory {
     }
     
     public EnterpriseDirectory(){
-        enterpriseDir=new ArrayList<Enterprise>();
+        enterpriseDir = new ArrayList<Enterprise>();
     }
     
     //Create enterprise
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
+        
         Enterprise enterprise=null;
-/*        if(type==Enterprise.EnterpriseType.Hospital){
+/*      
+        if(type==Enterprise.EnterpriseType.Hospital){
             enterprise=new HospitalEnterprise(name);
             enterpriseDir.add(enterprise);
         }
+        
         if(type==Enterprise.EnterpriseType.Drug){
             enterprise=new DrugEnterprise(name);
             enterpriseDir.add(enterprise);
         }
+        
         if(type==Enterprise.EnterpriseType.Insurance){
             enterprise=new InsuranceEnterprise(name);
             enterpriseDir.add(enterprise);
-        }if(type==Enterprise.EnterpriseType.MedicalWellness){
-            enterprise=new MedicalWellnessEnterprise(name);
+        }
+        
+        if(type==Enterprise.EnterpriseType.MedicalWellness){
+            enterprise=new WellnessAndSupportEnterprise(name);
             enterpriseDir.add(enterprise);
-        }if(type==Enterprise.EnterpriseType.Govt){
+        }
+        
+        if(type==Enterprise.EnterpriseType.Govt){
             enterprise=new GovernmentEnterprise(name);
             enterpriseDir.add(enterprise);
         } */
+
         return enterprise;
     }
     
