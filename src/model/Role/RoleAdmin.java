@@ -14,11 +14,10 @@ import model.UserAccount.UserAccount;
  *
  * @author dipikam
  */
-public class SystemAdminRole extends Role {
+public class RoleAdmin extends Role {
     
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys system) {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
         return null;
     }
-    
 }

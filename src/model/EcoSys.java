@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import model.Network.Network;
 import model.Organization.Organization;
 import model.Role.Role;
-import model.Role.SystemAdminRole;
+import model.Role.RoleSystemAdmin;
 
 /**
  *
@@ -34,7 +34,7 @@ public class EcoSys extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roleList=new ArrayList<Role>();
-        roleList.add(new SystemAdminRole());
+        roleList.add(new RoleSystemAdmin());
         return roleList;
     }
     
