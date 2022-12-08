@@ -12,11 +12,13 @@ import model.Role.RoleLabExaminer;
  *
  * @author dipikam
  */
-public class OrgLab{
+public class OrgLab extends Organization{
     
     public OrgLab() {
+        super(Organization.Type.Lab.getValue());
     }
 
+    @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
         roles.add(new RoleLabExaminer());
