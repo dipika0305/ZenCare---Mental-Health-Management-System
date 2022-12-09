@@ -46,7 +46,7 @@ public class EnterpriseDirectory {
             enterpriseDir.add(enterprise);
         }
         
-        if(type==Enterprise.EnterpriseType.MedicalWellness){
+        if(type==Enterprise.EnterpriseType.WellnessAndSupport){
             enterprise=new WellnessAndSupportEnterprise(name);
             enterpriseDir.add(enterprise);
         }
