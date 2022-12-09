@@ -6,23 +6,23 @@ package model.Organization;
 
 import java.util.ArrayList;
 import model.Role.Role;
-import model.Role.RoleAllocator;
+import model.Role.RoleGranter;
 
 /**
  *
  * @author dipikam
  */
-public class OrgAllocating extends Organization {
+public class OrgGranting extends Organization {
     
-    public OrgAllocating() {
-         super(Organization.Type. Acommittee.getValue());
+    public OrgGranting() {
+       super(Organization.Type.Gcomittee.getValue());
+    
     }
 
     @Override
     public ArrayList<Role> getSupportedRole() {
-      //  throw new UnsupportedOperationException("Not supported yet."); //Choose Tools > Template, to change the body of generated methods.
-        ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleAllocator());
+          ArrayList<Role> roles = new ArrayList();
+        roles.add(new RoleGranter());
         return roles;
     }
     
