@@ -46,12 +46,12 @@ public class EnterpriseDirectory {
             enterpriseDir.add(enterprise);
         }
         
-        if(type==Enterprise.EnterpriseType.MedicalWellness){
+        if(type==Enterprise.EnterpriseType.WellnessAndSupport){
             enterprise=new WellnessAndSupportEnterprise(name);
             enterpriseDir.add(enterprise);
         }
         
-        if(type==Enterprise.EnterpriseType.Govt){
+        if(type==Enterprise.EnterpriseType.Government){
             enterprise=new GovernmentEnterprise(name);
             enterpriseDir.add(enterprise);
         } 

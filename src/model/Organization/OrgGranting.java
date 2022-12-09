@@ -2,23 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model.Enterprise;
+package model.Organization;
 
 import java.util.ArrayList;
 import model.Role.Role;
+import model.Role.RoleGranter;
 
 /**
  *
  * @author dipikam
  */
-public class WellnessAndSupport extends Enterprise{
+public class OrgGranting extends Organization {
     
-    public WellnessAndSupport(String name){
-        super(name,EnterpriseType.WellnessAndSupport);
+    public OrgGranting() {
+       super(Organization.Type.Gcomittee.getValue());
+    
     }
+
     @Override
     public ArrayList<Role> getSupportedRole() {
-        return null;
+          ArrayList<Role> roles = new ArrayList();
+        roles.add(new RoleGranter());
+        return roles;
     }
     
 }
