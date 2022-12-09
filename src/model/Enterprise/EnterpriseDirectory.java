@@ -30,7 +30,7 @@ public class EnterpriseDirectory {
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
         
         Enterprise enterprise=null;
-/*      
+     
         if(type==Enterprise.EnterpriseType.Hospital){
             enterprise=new HospitalEnterprise(name);
             enterpriseDir.add(enterprise);
@@ -54,7 +54,7 @@ public class EnterpriseDirectory {
         if(type==Enterprise.EnterpriseType.Govt){
             enterprise=new GovernmentEnterprise(name);
             enterpriseDir.add(enterprise);
-        } */
+        } 
 
         return enterprise;
     }
