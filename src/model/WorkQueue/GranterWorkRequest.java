@@ -9,7 +9,7 @@ import model.UserAccount.UserAccount;
 
 /**
  *
- * @author steve
+ * @author Vidhi
  */
 public class GranterWorkRequest extends WorkRequest {
       private String grantInfo;

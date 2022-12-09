@@ -1,11 +1,12 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.UserAccount;
 
-import model.Emp.Employee;
+import model.Employee.Employee;
 import model.Role.Role;
+import model.WorkQueue.WorkQueue;
 
 /**
  *
@@ -15,12 +16,12 @@ public class UserAccount {
     
     private String username;
     private String password;
-    private Employee emp;
+    private Employee employee;
     private Role role;
-//    private WorkQueue workQueue;
+    private WorkQueue workQueue;
 
     public UserAccount() {
-//        workQueue = new WorkQueue();
+        workQueue = new WorkQueue();
     }
     
     
@@ -46,7 +47,7 @@ public class UserAccount {
     }
 
     public void setEmployee(Employee employee) {
-        this.emp = employee;
+        this.employee = employee;
     }
 
     public void setRole(Role role) {
@@ -54,12 +55,12 @@ public class UserAccount {
     }
 
     public Employee getEmployee() {
-        return emp;
+        return employee;
     }
 
-//    public WorkQueue getWorkQueue() {
-//        return workQueue;
-//    }
+    public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
 
     
     
@@ -67,5 +68,7 @@ public class UserAccount {
     public String toString() {
         return username;
     }
+    
+    
     
 }

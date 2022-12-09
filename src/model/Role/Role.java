@@ -1,14 +1,14 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.Role;
 
-import javax.swing.JPanel;
 import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
+import javax.swing.JPanel;
 
 /**
  *
@@ -28,8 +28,9 @@ public abstract class Role {
         Nurse("Nurse"),
         Caretaker("Caretaker"),
         Allocator("Allocator"),
-        Granter("Granter");
-//        SupplimentProvider("Suppliment Provider");
+        Granter("Granter"),
+        SupplimentProvider("Suppliment Provider")
+        ;
         
         private String value;
         private RoleType(String value){
@@ -56,5 +57,6 @@ public abstract class Role {
     public String toString() {
         return this.getClass().getName();
     }
+    
     
 }

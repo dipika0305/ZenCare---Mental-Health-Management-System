@@ -6,7 +6,7 @@ package model.WorkQueue;
 
 /**
  *
- * @author Mitali
+ * @author mitali
  */
 public class MedicineWorkRequest extends WorkRequest{
     

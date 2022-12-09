@@ -8,20 +8,18 @@ import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
-//import userinterface.AdministrativeRole.AdminWorkAreaJPanel;
 import javax.swing.JPanel;
+//import userinterface.RolePharmacist.PharmacistWorkAreaJPanel;
 
 /**
  *
  * @author dipikam
  */
-public class RoleAdmin extends Role{
+public class RolePharmacist extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
         return null;
     }
-
-    
     
 }

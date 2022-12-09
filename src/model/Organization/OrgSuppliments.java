@@ -3,25 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.Enterprise;
+package model.Organization;
 
-import model.Enterprise.Enterprise.EnterpriseType;
 import model.Role.Role;
+import model.Role.RoleSupplimentProvider;
 import java.util.ArrayList;
 
 /**
  *
  * @author Vidhi
  */
-public class WellnessAndSupportEnterprise extends Enterprise {
-    
-    public WellnessAndSupportEnterprise(String name){
-        super(name,EnterpriseType.WellnessAndSupport);
+public class OrgSuppliments  extends Organization{
+
+    public OrgSuppliments() {
+        super(Organization.Type.Suppliments.getValue()); 
     }
-    
+
     @Override
     public ArrayList<Role> getSupportedRole() {
-        return null;
+           ArrayList<Role> roles = new ArrayList();
+        roles.add(new RoleSupplimentProvider());
+        return roles;
     }
     
 }

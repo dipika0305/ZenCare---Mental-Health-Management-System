@@ -4,7 +4,7 @@
  */
 package model.Organization;
 
-import model.Role.RoleLabExaminer;
+import model.Role.RoleMedicalCoder;
 import model.Role.Role;
 import java.util.ArrayList;
 
@@ -12,16 +12,16 @@ import java.util.ArrayList;
  *
  * @author Mitali
  */
-public class OrgLab extends Organization{
+public class OrgMedicalCoder extends Organization{
 
-    public OrgLab() {
-        super(Organization.Type.Lab.getValue());
+    public OrgMedicalCoder() {
+        super(Organization.Type.MedicalCoder.getValue());
     }
 
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleLabExaminer());
+        roles.add(new RoleMedicalCoder());
         return roles;
     }
      

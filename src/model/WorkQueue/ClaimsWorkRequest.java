@@ -10,7 +10,7 @@ import java.math.BigInteger;
 
 /**
  *
- * @author Mitali
+ * @author dipikam
  */
 public class ClaimsWorkRequest extends WorkRequest {
     private String claimsInfo;

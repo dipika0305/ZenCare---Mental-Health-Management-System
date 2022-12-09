@@ -1,28 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
-import model.Emp.Employee;
-import model.UserAccount.UserAccount;
+import model.Employee.Employee;
 import model.Role.RoleSystemAdmin;
-
+import model.UserAccount.UserAccount;
 
 /**
  *
- * @author dipikam
+ * @author Mitali
  */
 public class ConfigSys {
     
     public static EcoSys configure(){
         
-        EcoSys sys = EcoSys.getInstance();              
-        Employee employee = sys.getEmployeeDir().createEmployee("sysadmin"); //Creates a Root User
+        EcoSys system = EcoSys.getInstance();
         
-        UserAccount ua = sys.getUserAccountDir().createUserAccount("sysadmin", "sysadmin", employee, new RoleSystemAdmin());
+        //Create a network
+        //create an enterprise
+        //initialize some organizations
+        //have some employees 
+        //create user account
         
-        return sys;
+        
+        Employee employee = system.getEmployeeDirectory().createEmployee("sysadmin");
+        
+        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new RoleSystemAdmin());
+        
+        return system;
     }
     
 }

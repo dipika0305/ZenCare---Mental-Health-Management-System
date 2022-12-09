@@ -1,22 +1,22 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.WorkQueue;
 
 /**
  *
- * @author Mitali
+ * @author Vidhi
  */
-public class DoctorWorkRequest extends WorkRequest{
-    private String doctorInfo;
+public class DoctorWorkRequest extends WorkRequest {
+        private String doctorInfo;
 
-    public String getDoctorInfo() {
+    public String getdoctorInfo() {
         return doctorInfo;
     }
 
     public void setDoctorInfo(String doctorInfo) {
         this.doctorInfo = doctorInfo;
     }
-    
 }
