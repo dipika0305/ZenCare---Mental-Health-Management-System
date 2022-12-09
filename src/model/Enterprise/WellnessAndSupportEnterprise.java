@@ -11,9 +11,9 @@ import model.Role.Role;
  *
  * @author dipikam
  */
-public class WellnessAndSupport extends Enterprise{
+public class WellnessAndSupportEnterprise extends Enterprise{
     
-    public WellnessAndSupport(String name){
+    public WellnessAndSupportEnterprise(String name){
         super(name,EnterpriseType.WellnessAndSupport);
     }
     @Override

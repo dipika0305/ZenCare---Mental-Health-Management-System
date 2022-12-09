@@ -51,7 +51,7 @@ public class EnterpriseDirectory {
             enterpriseDir.add(enterprise);
         }
         
-        if(type==Enterprise.EnterpriseType.Govt){
+        if(type==Enterprise.EnterpriseType.Government){
             enterprise=new GovernmentEnterprise(name);
             enterpriseDir.add(enterprise);
         } 
