@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.WorkQueue;
 
@@ -21,5 +21,19 @@ public class WorkQueue {
     public ArrayList<WorkRequest> getWorkRequestList() {
         return workRequestList;
     }
-    
+     public ArrayList<WorkRequest> getFilteredListbyName(String name)
+     {
+         ArrayList<WorkRequest> list=new ArrayList<WorkRequest>();
+         
+        for(WorkRequest req:workRequestList)
+        {
+            //PatientWorkRequest p=(PatientWorkRequest)req;
+            if(req.getPatient()!=null && req.getPatient().equalsIgnoreCase(name))
+            {
+                list.add(req);
+               
+            }
+        }
+        return list;
+     }
 }

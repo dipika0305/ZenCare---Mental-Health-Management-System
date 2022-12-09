@@ -1,20 +1,21 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model;
 
-import java.util.ArrayList;
 import model.Network.Network;
 import model.Organization.Organization;
 import model.Role.Role;
 import model.Role.RoleSystemAdmin;
+import java.util.ArrayList;
 
 /**
  *
- * @author dipikam
+ * @author Mitali
  */
-public class EcoSys extends Organization {
+public class EcoSys extends Organization{
     
     private static EcoSys business;
     private ArrayList<Network> networkList;
@@ -30,14 +31,12 @@ public class EcoSys extends Organization {
         networkList.add(network);
         return network;
     }
-    
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roleList=new ArrayList<Role>();
         roleList.add(new RoleSystemAdmin());
         return roleList;
     }
-    
     private EcoSys(){
         super(null);
         networkList=new ArrayList<Network>();
@@ -52,7 +51,7 @@ public class EcoSys extends Organization {
     }
     
     public boolean checkIfUserIsUnique(String userName){
-        if(!this.getUserAccountDir().checkIfUsernameIsUnique(userName)){
+        if(!this.getUserAccountDirectory().checkIfUsernameIsUnique(userName)){
             return false;
         }
         for(Network network:networkList){
@@ -60,5 +59,4 @@ public class EcoSys extends Organization {
         }
         return true;
     }
-    
 }

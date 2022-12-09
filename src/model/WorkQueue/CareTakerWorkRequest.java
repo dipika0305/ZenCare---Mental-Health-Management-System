@@ -9,7 +9,7 @@ import model.UserAccount.UserAccount;
 
 /**
  *
- * @author Mitali
+ * @author Vidhi
  */
 public class CareTakerWorkRequest extends WorkRequest {
      private String caretakerInfo;

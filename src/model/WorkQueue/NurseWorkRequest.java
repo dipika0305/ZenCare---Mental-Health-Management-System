@@ -7,7 +7,7 @@ package model.WorkQueue;
 
 /**
  *
- * @author Mitali
+ * @author dipikam
  */
 public class NurseWorkRequest extends WorkRequest {
     private String nurseInfo;

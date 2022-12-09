@@ -1,19 +1,19 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.Organization;
 
-import java.util.ArrayList;
-import model.Role.Role;
 import model.Role.RoleDoctor;
+import model.Role.Role;
+import java.util.ArrayList;
 
 /**
  *
- * @author dipikam
+ * @author Mitali
  */
-public class OrgDoctor extends Organization {
-    
+public class OrgDoctor extends Organization{
+
     public OrgDoctor() {
         super(Organization.Type.Doctor.getValue());
        
@@ -25,5 +25,5 @@ public class OrgDoctor extends Organization {
         roles.add(new RoleDoctor());
         return roles;
     }
-    
+  
 }
