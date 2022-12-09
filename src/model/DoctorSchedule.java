@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model;
 
@@ -11,7 +12,6 @@ import java.util.ArrayList;
  * @author dipikam
  */
 public class DoctorSchedule {
-    
     ArrayList<String>schedDir;
 
     public ArrayList<String> getSchedDir() {
@@ -24,7 +24,7 @@ public class DoctorSchedule {
     public DoctorSchedule() {
         schedDir=new ArrayList<String>();
         String[] day = {"Mon", "Tue", "Wed","Thu","Fri"};
-        String[] time={"10:00AM","11:00AM","12:00PM","1:00PM","2:00PM"};
+        String[] time={"11:00AM","1:00PM","2:00PM","3:00PM","4:00PM"};
         for (int rowNum=0; rowNum<5;rowNum++) {
             for (int colGroup=0; colGroup<5; colGroup++) 
                {
@@ -34,8 +34,10 @@ public class DoctorSchedule {
         }
     }
     
-    public void removerow(String s){
-        schedDir.remove(s);
-    }
-    
+    public void removerow(String s)
+{
+   
+    schedDir.remove(s);
+   
+} 
 }

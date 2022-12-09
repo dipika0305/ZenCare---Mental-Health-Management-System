@@ -1,12 +1,12 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.UserAccount;
 
-import java.util.ArrayList;
-import model.Emp.Employee;
+import model.Employee.Employee;
 import model.Role.Role;
+import java.util.ArrayList;
 
 /**
  *
@@ -14,23 +14,18 @@ import model.Role.Role;
  */
 public class UserAccountDirectory {
     
-    private ArrayList<UserAccount> userAccountDir;
+    private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {
-        userAccountDir = new ArrayList();
+        userAccountList = new ArrayList();
     }
 
-    public ArrayList<UserAccount> getUserAccountDir() {
-        return userAccountDir;
+    public ArrayList<UserAccount> getUserAccountList() {
+        return userAccountList;
     }
-
-    public void setUserAccountDir(ArrayList<UserAccount> userAccountDir) {
-        this.userAccountDir = userAccountDir;
-    }
-
     
     public UserAccount authenticateUser(String username, String password){
-        for (UserAccount ua : userAccountDir)
+        for (UserAccount ua : userAccountList)
             if (ua.getUsername().equals(username) && ua.getPassword().equals(password)){
                 return ua;
             }
@@ -43,16 +38,15 @@ public class UserAccountDirectory {
         userAccount.setPassword(password);
         userAccount.setEmployee(employee);
         userAccount.setRole(role);
-        userAccountDir.add(userAccount);
+        userAccountList.add(userAccount);
         return userAccount;
     }
     
     public boolean checkIfUsernameIsUnique(String username){
-        for (UserAccount ua : userAccountDir){
+        for (UserAccount ua : userAccountList){
             if (ua.getUsername().equals(username))
                 return false;
         }
         return true;
     }
-    
 }

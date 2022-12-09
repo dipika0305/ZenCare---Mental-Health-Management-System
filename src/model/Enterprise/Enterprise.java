@@ -1,6 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.Enterprise;
 
@@ -14,23 +15,17 @@ import model.Organization.OrganizationDirectory;
 public abstract class Enterprise extends Organization{
     
     private EnterpriseType enterpriseType;
-    private OrganizationDirectory organizationDir;
+    private OrganizationDirectory organizationDirectory;
+
+    public OrganizationDirectory getOrganizationDirectory() {
+        return organizationDirectory;
+    }
     
-    /*submit the inputs and wait the output
-
-creates new panel for new role in the organization
-
-data to be defined.
-
-data passed in the function.
-
-*/
-    //Declaring enumeration for five enterprises
     public enum EnterpriseType{
         Hospital("Hospital"),
         Drug("Drug"),
         Insurance("Insurance"),
-        WellnessAndSupport("Wellness and Support"),
+        WellnessAndSupport("Wellness And Support"),
         Government("Government");
         
         private String value;
@@ -38,21 +33,13 @@ data passed in the function.
         private EnterpriseType(String value){
             this.value=value;
         }
-        
         public String getValue() {
             return value;
         }
-        
         @Override
-            public String toString(){
-            return value;
-        }
+        public String toString(){
+        return value;
     }
-    
-    public Enterprise(String name, EnterpriseType type){
-        super(name);
-        this.enterpriseType=type;
-        organizationDir=new OrganizationDirectory();
     }
 
     public EnterpriseType getEnterpriseType() {
@@ -62,13 +49,10 @@ data passed in the function.
     public void setEnterpriseType(EnterpriseType enterpriseType) {
         this.enterpriseType = enterpriseType;
     }
-
-    public OrganizationDirectory getOrganizationDir() {
-        return organizationDir;
-    }
-
-    public void setOrganizationDir(OrganizationDirectory organizationDir) {
-        this.organizationDir = organizationDir;
-    }
     
+    public Enterprise(String name,EnterpriseType type){
+        super(name);
+        this.enterpriseType=type;
+        organizationDirectory=new OrganizationDirectory();
+    }
 }

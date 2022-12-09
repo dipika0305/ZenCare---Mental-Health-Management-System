@@ -1,28 +1,28 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.Organization;
 
-import java.util.ArrayList;
-import model.Emp.EmployeeDirectory;
+import model.Employee.EmployeeDirectory;
 import model.Role.Role;
 import model.UserAccount.UserAccountDirectory;
 import model.WorkQueue.WorkQueue;
+import java.util.ArrayList;
 
 /**
  *
  * @author dipikam
  */
 public abstract class Organization {
-    
+
     private String name;
-    private EmployeeDirectory employeeDir;
-    private UserAccountDirectory userAccountDir;
-    private int orgID;
-    private static int counter=0;
     private WorkQueue workQueue;
-  
+    private EmployeeDirectory employeeDirectory;
+    private UserAccountDirectory userAccountDirectory;
+    private int organizationID;
+    private static int counter=0;
+    
     public enum Type{
         Admin("Admin Organization"), 
         Doctor("Doctor Organization"),
@@ -36,8 +36,8 @@ public abstract class Organization {
         Nurse("Nurse"),
         Suppliments("Suppliments"),
         Acommittee("Allocatting Committee"),
-        Gcomittee("Granting Comittee");
-        
+        Gcomittee("Granting Comittee")
+        ;
         private String value;
         private Type(String value) {
             this.value = value;
@@ -50,36 +50,36 @@ public abstract class Organization {
     public Organization(String name) {
         this.name = name;
         workQueue = new WorkQueue();
-        employeeDir = new EmployeeDirectory();
-        userAccountDir = new UserAccountDirectory();
-        orgID = counter;
+        employeeDirectory = new EmployeeDirectory();
+        userAccountDirectory = new UserAccountDirectory();
+        organizationID = counter;
         ++counter;
     }
 
     public abstract ArrayList<Role> getSupportedRole();
-
-    public EmployeeDirectory getEmployeeDir() {
-        return employeeDir;
+    
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
     }
 
-    public UserAccountDirectory getUserAccountDir() {
-        return userAccountDir;
+    public int getOrganizationID() {
+        return organizationID;
     }
 
-    public int getOrgID() {
-        return orgID;
+    public EmployeeDirectory getEmployeeDirectory() {
+        return employeeDirectory;
     }
     
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public WorkQueue getWorkQueue() {
         return workQueue;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setWorkQueue(WorkQueue workQueue) {
@@ -90,5 +90,6 @@ public abstract class Organization {
     public String toString() {
         return name;
     }
+    
     
 }

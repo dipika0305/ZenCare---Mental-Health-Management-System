@@ -6,7 +6,7 @@ package model.WorkQueue;
 
 /**
  *
- * @author Mitali
+ * @author dipikam
  */
 public class LabTestWorkRequest extends WorkRequest{
     

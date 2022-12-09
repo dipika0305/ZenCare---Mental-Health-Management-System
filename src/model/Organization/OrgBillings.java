@@ -5,25 +5,27 @@
  */
 package model.Organization;
 
-import model.Role.RoleGranter;
+
+import model.Role.RoleBillGenerator;
 import model.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author Vidhi
+ * @author dipikam
  */
-public class OrgGranting  extends Organization{
 
-    public OrgGranting() {
-       super(Organization.Type.Gcomittee.getValue());
+
+public class OrgBillings extends Organization {
     
+    public OrgBillings(){
+        super(Organization.Type.Billing.getValue());
     }
-
+    
     @Override
-    public ArrayList<Role> getSupportedRole() {
-          ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleGranter());
+    public ArrayList<Role> getSupportedRole(){
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new RoleBillGenerator());
         return roles;
     }
     

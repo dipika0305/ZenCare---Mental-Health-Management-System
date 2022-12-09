@@ -1,26 +1,28 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package model.Role;
 
-import javax.swing.JPanel;
 import model.DoctorSchedule;
 import model.EcoSys;
 import model.Enterprise.Enterprise;
+import model.Organization.OrgDoctor;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
+import javax.swing.JPanel;
+//import userinterface.RoleDoctor.DoctorWorkAreaMainJPanel;
 
 /**
  *
  * @author dipikam
  */
 public class RoleDoctor extends Role{
-    
-    public DoctorSchedule schedule = new DoctorSchedule();
+ public DoctorSchedule sched=new DoctorSchedule();
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
         return null;
     }
+    
     
 }

@@ -4,24 +4,24 @@
  */
 package model.Organization;
 
-import model.Role.RoleLabExaminer;
+import model.Role.RoleDrugManufacturer;
 import model.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author Mitali
+ * @author Vidhi
  */
-public class OrgLab extends Organization{
+public class OrgDrugManufacturer extends Organization{
 
-    public OrgLab() {
-        super(Organization.Type.Lab.getValue());
+    public OrgDrugManufacturer() {
+        super(Organization.Type.DrugManufacturer.getValue());
     }
 
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleLabExaminer());
+        roles.add(new RoleDrugManufacturer());
         return roles;
     }
      
