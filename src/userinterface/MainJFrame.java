@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Lingfeng
+ * @author Vidhi
  */
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -60,7 +60,6 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -83,14 +82,15 @@ public class MainJFrame extends javax.swing.JFrame {
         userNameJTextField.setBackground(new java.awt.Color(255, 231, 161));
         userNameJTextField.setFont(new java.awt.Font("Segoe UI", 2, 16)); // NOI18N
         userNameJTextField.setForeground(new java.awt.Color(0, 153, 153));
+        userNameJTextField.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         userNameJTextField.setText("Enter your username");
-        jPanel1.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 362, 203, 40));
+        jPanel1.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 362, 190, 40));
 
         passwordField.setBackground(new java.awt.Color(255, 231, 161));
         passwordField.setFont(new java.awt.Font("Segoe UI", 2, 16)); // NOI18N
         passwordField.setForeground(new java.awt.Color(0, 153, 153));
         passwordField.setText("Enter your password");
-        jPanel1.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 448, 203, 40));
+        jPanel1.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 448, 190, 40));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
@@ -119,6 +119,15 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(0, 153, 153));
         jLabel5.setText("Enter your details");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 267, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\id.png")); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\user.png")); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\pass.png")); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 61, -1, -1));
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 356, -1, -1));
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 433, -1, -1));
@@ -128,15 +137,16 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(0, 153, 153));
         container.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 27)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Mental Healthcare Management System");
-        container.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 460, 60));
-
-        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel2.setPreferredSize(new java.awt.Dimension(783, 78));
+        container.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 530, 60));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\img.jpg")); // NOI18N
+        container.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -156,9 +166,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1079, 659));
 
+
         jSplitPane1.setRightComponent(container);
 
-        getContentPane().add(jSplitPane1, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(jSplitPane1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -288,7 +299,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton loginJButton;
     private javax.swing.JLabel loginJLabel;
