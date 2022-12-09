@@ -128,6 +128,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\pass.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 61, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 356, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 433, -1, -1));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
@@ -140,8 +143,29 @@ public class MainJFrame extends javax.swing.JFrame {
         container.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 530, 60));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel3.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\img.jpg")); // NOI18N
         container.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        container.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1079, 659));
+
 
         jSplitPane1.setRightComponent(container);
 
