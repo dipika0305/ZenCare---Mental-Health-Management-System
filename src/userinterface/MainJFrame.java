@@ -120,18 +120,20 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel5.setText("Enter your details");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 267, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\id.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/id.png"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\user.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user.png"))); // NOI18N
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\pass.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pass.png"))); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
         container.setBackground(new java.awt.Color(0, 153, 153));
+        container.setMaximumSize(new java.awt.Dimension(1143, 546));
+        container.setMinimumSize(new java.awt.Dimension(1143, 546));
         container.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 27)); // NOI18N
@@ -140,8 +142,9 @@ public class MainJFrame extends javax.swing.JFrame {
         container.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 530, 60));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon("E:\\Uni\\AED_Final_Project\\src\\images\\img.jpg")); // NOI18N
-        container.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/img.jpg"))); // NOI18N
+        jLabel3.setMaximumSize(new java.awt.Dimension(1143, 546));
+        container.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 750, 420));
 
         jSplitPane1.setRightComponent(container);
 
