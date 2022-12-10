@@ -10,8 +10,7 @@ import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-//import userinterface.LabAssistantRole.LabAssistantWorkAreaJPanel;
-//import userinterface.SupplimentsRole.SupplimentsWorkAreaJPanel;
+import userinterface.SupplimentsRole.SupplimentsWorkAreaJPanel;
 
 /**
  *
@@ -21,9 +20,8 @@ public class RoleSupplimentProvider extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-         return null;
-     
-    
+         return new SupplimentsWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
+         
     }
     
 }
