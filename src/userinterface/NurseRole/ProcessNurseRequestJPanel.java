@@ -65,66 +65,73 @@ public class ProcessNurseRequestJPanel extends javax.swing.JPanel {
         patientname = new java.awt.Label();
         label2 = new java.awt.Label();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setBackground(new java.awt.Color(255, 255, 255));
-        submitJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        submitJButton.setBackground(new java.awt.Color(0, 153, 153));
+        submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("Forward Request to CareTaker");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 220, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, 280, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Message");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
-        add(careTakeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 190, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, 30));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        backJButton.setText("Back");
+        careTakeInfo.setBackground(null);
+        careTakeInfo.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(careTakeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 210, -1));
+
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(0, 153, 153));
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, -1, -1));
 
-        submitJButton1.setBackground(new java.awt.Color(255, 255, 255));
-        submitJButton1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        submitJButton1.setBackground(new java.awt.Color(0, 153, 153));
+        submitJButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitJButton1.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton1.setText("Forward Request to Dietician");
         submitJButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButton1ActionPerformed(evt);
             }
         });
-        add(submitJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 280, 320, -1));
+        add(submitJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, 280, -1));
 
+        dieticianInfo.setBackground(null);
+        dieticianInfo.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         dieticianInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dieticianInfoActionPerformed(evt);
             }
         });
-        add(dieticianInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, 190, 20));
+        add(dieticianInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 210, 20));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("Message");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel3.setText("NURSE ");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
 
-        patientname.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        patientname.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         patientname.setText("<name>");
-        add(patientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 128, -1));
+        add(patientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 190, -1));
 
-        label2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Patient Name");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 170, -1));
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 100, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

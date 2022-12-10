@@ -128,9 +128,10 @@ public class NurseWorkAreaJPanel extends javax.swing.JPanel {
         btnBook = new javax.swing.JButton();
         listSched = new java.awt.List();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        userRequestJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         userRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -165,38 +166,41 @@ public class NurseWorkAreaJPanel extends javax.swing.JPanel {
             userRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 450, 96));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 450, 96));
 
-        assignJButton.setBackground(new java.awt.Color(255, 255, 255));
-        assignJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        assignJButton.setText("Assign to me");
+        assignJButton.setBackground(new java.awt.Color(0, 153, 153));
+        assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
+        assignJButton.setText("ASSIGN TO ME");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 510, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 520, -1, -1));
 
-        processJButton.setBackground(new java.awt.Color(255, 255, 255));
-        processJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        processJButton.setText("Process");
+        processJButton.setBackground(new java.awt.Color(0, 153, 153));
+        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 255, 255));
+        processJButton.setText("PROCESS");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 320, -1, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 300, 130, -1));
 
-        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, -1, -1));
 
+        workRequestJTable2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -225,26 +229,28 @@ public class NurseWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane3.setViewportView(workRequestJTable2);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, -1, 100));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, -1, 100));
 
-        valueLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+        valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 150, 30));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, -1, -1));
 
-        btnBook.setBackground(new java.awt.Color(255, 255, 255));
-        btnBook.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        btnBook.setText("Book");
+        btnBook.setBackground(new java.awt.Color(0, 153, 153));
+        btnBook.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnBook.setForeground(new java.awt.Color(255, 255, 255));
+        btnBook.setText("BOOK");
         btnBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBookActionPerformed(evt);
             }
         });
-        add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 90, -1, -1));
-        add(listSched, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 140, 80, 180));
+        add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(822, 520, 80, -1));
+
+        listSched.setBackground(new java.awt.Color(255, 255, 255));
+        add(listSched, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 190, 80, 310));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

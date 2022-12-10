@@ -207,7 +207,7 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
                 btnBookActionPerformed(evt);
             }
         });
-        add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, -1, -1));
+        add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 500, -1, -1));
 
         workRequestJTable3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable3.setModel(new javax.swing.table.DefaultTableModel(
@@ -247,7 +247,7 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
         add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 430, 96));
 
         listSched.setBackground(new java.awt.Color(255, 255, 255));
-        add(listSched, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 220, 160, 190));
+        add(listSched, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 180, 90, 300));
 
         btnForward.setBackground(new java.awt.Color(0, 153, 153));
         btnForward.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
