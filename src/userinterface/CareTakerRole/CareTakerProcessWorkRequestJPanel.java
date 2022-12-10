@@ -56,45 +56,49 @@ public class CareTakerProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         ptName = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setBackground(new java.awt.Color(255, 255, 255));
-        submitJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        submitJButton.setText("SUBMIT>>");
+        submitJButton.setBackground(new java.awt.Color(0, 153, 153));
+        submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
+        submitJButton.setText("SUBMIT");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 350, 100, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        jLabel1.setText("CareTaker:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 130, -1));
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel1.setText("CareTaker");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, 20));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        backJButton.setText("<<BACK");
+        resultJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, 190, -1));
+
+        backJButton.setBackground(new java.awt.Color(0, 153, 153));
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 100, -1));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setText("CARE TAKER RESULT");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, -1, 40));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, -1, 40));
 
-        jLabel5.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setText("Patient Name");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 130, 30));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 130, 30));
 
-        ptName.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        ptName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         ptName.setText("<name>");
-        add(ptName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, -1, -1));
+        add(ptName, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, -1, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

@@ -109,21 +109,24 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        createUserJButton.setBackground(new java.awt.Color(255, 255, 255));
-        createUserJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        createUserJButton.setText("CREATE USER>>");
+        createUserJButton.setBackground(new java.awt.Color(0, 153, 153));
+        createUserJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        createUserJButton.setForeground(new java.awt.Color(255, 255, 255));
+        createUserJButton.setText("CREATE USER");
         createUserJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createUserJButtonActionPerformed(evt);
             }
         });
-        add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 570, -1, -1));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 146, -1));
+        add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, 140, -1));
 
-        userJTable.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        nameJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 450, 146, -1));
+
+        userJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -153,61 +156,67 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             userJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, 375, 179));
-        add(passwordJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 520, 146, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, 375, 179));
 
+        passwordJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(passwordJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, 146, -1));
+
+        employeeJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         employeeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         employeeJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 employeeJComboBoxActionPerformed(evt);
             }
         });
-        add(employeeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 146, -1));
+        add(employeeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 146, -1));
 
-        backjButton1.setBackground(new java.awt.Color(255, 255, 255));
-        backjButton1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        backjButton1.setText("<< Back");
+        backjButton1.setBackground(new java.awt.Color(0, 153, 153));
+        backjButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backjButton1.setForeground(new java.awt.Color(255, 255, 255));
+        backjButton1.setText("BACK");
         backjButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backjButton1ActionPerformed(evt);
             }
         });
-        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 570, 130, 30));
+        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 590, 140, -1));
 
-        jLabel5.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        jLabel5.setText("PASSWORD");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 530, -1, -1));
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel5.setText("Password");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 500, -1, 20));
 
+        organizationJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 146, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 146, -1));
 
+        roleJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         roleJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 146, -1));
+        add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 146, -1));
 
-        jLabel6.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel6.setText("MANAGE USER");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel7.setText("Organization");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 300, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        jLabel8.setText("eMPLOYEE");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, -1, -1));
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel8.setText("Employee");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 350, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        jLabel9.setText("ROLE");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 450, -1, -1));
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel9.setText("Role");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, -1, 20));
 
-        jLabel10.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        jLabel10.setText("USER NAME");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 490, -1, -1));
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel10.setText("Username");
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, -1, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void createUserJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUserJButtonActionPerformed
