@@ -99,6 +99,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1.setText("Requested Amount");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
 
+        requestedAmount.setBackground(null);
         requestedAmount.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         requestedAmount.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         requestedAmount.setEnabled(false);
@@ -128,6 +129,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel3.setText("Amount to be Granted");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
 
+        grantedAmount.setBackground(null);
         grantedAmount.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         grantedAmount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,8 +141,9 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel4.setText("Status");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 430, -1, -1));
 
+        message.setBackground(null);
         message.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         message.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,6 +181,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, -1, -1));
 
+        PatientName.setBackground(null);
         PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setForeground(new java.awt.Color(0, 0, 0));
         PatientName.setName(""); // NOI18N
