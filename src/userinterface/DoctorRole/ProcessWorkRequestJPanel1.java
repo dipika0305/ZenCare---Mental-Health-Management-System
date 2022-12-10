@@ -52,13 +52,13 @@ public class ProcessWorkRequestJPanel1 extends javax.swing.JPanel {
         submitJButton.setBackground(new java.awt.Color(0, 153, 153));
         submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
-        submitJButton.setText("Submit Details");
+        submitJButton.setText("SUBMIT DETAILS");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Disease Info");
@@ -69,7 +69,7 @@ public class ProcessWorkRequestJPanel1 extends javax.swing.JPanel {
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
-        backJButton.setText("Back");
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);

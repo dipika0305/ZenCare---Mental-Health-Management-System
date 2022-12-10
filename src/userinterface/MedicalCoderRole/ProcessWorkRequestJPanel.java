@@ -46,45 +46,48 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         PatientName = new java.awt.Label();
         label2 = new java.awt.Label();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setBackground(new java.awt.Color(255, 255, 255));
-        submitJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        submitJButton.setText("Submit Result");
+        submitJButton.setBackground(new java.awt.Color(0, 153, 153));
+        submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
+        submitJButton.setText("SUBMIT RESULT");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 150, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Result");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, -1));
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 170, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 219, -1, 30));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        backJButton.setText("Back");
+        resultJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 220, 30));
+
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(0, 153, 153));
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 150, -1));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setText("MEDICAL CODER REQUEST");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
-        PatientName.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setName(""); // NOI18N
-        add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 129, -1));
+        add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 220, 30));
 
-        label2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        label2.setText("Patient Name :");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 190, -1));
+        label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        label2.setText("Patient Name");
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 163, 110, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
