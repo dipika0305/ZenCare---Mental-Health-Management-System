@@ -86,9 +86,10 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        workRequestJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -124,59 +125,62 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 530, 96));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 530, 110));
 
-        assignJButton.setBackground(new java.awt.Color(255, 255, 255));
-        assignJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        assignJButton.setBackground(new java.awt.Color(0, 153, 153));
+        assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
         assignJButton.setText("Assign to me");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, -1, -1));
 
-        processJButton.setBackground(new java.awt.Color(255, 255, 255));
-        processJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        processJButton.setBackground(new java.awt.Color(0, 153, 153));
+        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 255, 255));
         processJButton.setText("Process");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, -1, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, -1, -1));
 
-        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 180, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("PHARMACIST");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, -1, -1));
 
-        drugmanufacJButton.setBackground(new java.awt.Color(255, 255, 255));
-        drugmanufacJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        drugmanufacJButton.setBackground(new java.awt.Color(0, 153, 153));
+        drugmanufacJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        drugmanufacJButton.setForeground(new java.awt.Color(255, 255, 255));
         drugmanufacJButton.setText("Drug Manufacturer Request");
         drugmanufacJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 drugmanufacJButtonActionPerformed(evt);
             }
         });
-        add(drugmanufacJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, -1, -1));
+        add(drugmanufacJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, -1, -1));
 
-        valueLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 150, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, -1));
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
