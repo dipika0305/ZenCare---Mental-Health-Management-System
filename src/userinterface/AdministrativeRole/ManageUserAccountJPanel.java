@@ -121,7 +121,7 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 createUserJButtonActionPerformed(evt);
             }
         });
-        add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, 140, -1));
+        add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 570, 140, -1));
 
         nameJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 450, 146, -1));
@@ -170,16 +170,15 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
         add(employeeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 146, -1));
 
-        backjButton1.setBackground(new java.awt.Color(0, 153, 153));
         backjButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        backjButton1.setForeground(new java.awt.Color(255, 255, 255));
+        backjButton1.setForeground(new java.awt.Color(0, 153, 153));
         backjButton1.setText("BACK");
         backjButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backjButton1ActionPerformed(evt);
             }
         });
-        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 590, 140, -1));
+        add(backjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 570, 140, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setText("Password");

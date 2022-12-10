@@ -117,26 +117,27 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
         listSched = new java.awt.List();
         btnForward = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        refreshTestJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshTestJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        refreshTestJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, -1, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 23, 127, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 90, 30));
 
-        valueLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 27, 158, 26));
+        valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 220, 26));
 
+        workRequestJTable2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -170,40 +171,45 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
             workRequestJTable2.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 390, 96));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 380, 430, 96));
 
-        assignJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        assignJButton.setBackground(new java.awt.Color(0, 153, 153));
+        assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
         assignJButton.setText("Assign to me");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 480, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 500, -1, -1));
 
-        processJButton.setBackground(new java.awt.Color(255, 255, 255));
-        processJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        processJButton.setBackground(new java.awt.Color(0, 153, 153));
+        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 255, 255));
         processJButton.setText("Process");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, -1, -1));
 
         listsched.setVisible(false);
         add(listsched, new org.netbeans.lib.awtextra.AbsoluteConstraints(671, 84, 0, 0));
 
-        btnBook.setBackground(new java.awt.Color(255, 255, 255));
-        btnBook.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        btnBook.setBackground(new java.awt.Color(0, 153, 153));
+        btnBook.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnBook.setForeground(new java.awt.Color(255, 255, 255));
         btnBook.setText("Book");
         btnBook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBookActionPerformed(evt);
             }
         });
-        add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(584, 84, -1, -1));
+        add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, -1, -1));
 
+        workRequestJTable3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -238,17 +244,21 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
             workRequestJTable3.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 380, 96));
-        add(listSched, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 140, 80, 180));
+        add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 430, 96));
 
-        btnForward.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        listSched.setBackground(new java.awt.Color(255, 255, 255));
+        add(listSched, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 220, 160, 190));
+
+        btnForward.setBackground(new java.awt.Color(0, 153, 153));
+        btnForward.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnForward.setForeground(new java.awt.Color(255, 255, 255));
         btnForward.setText("Forward to other network hospital");
         btnForward.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnForwardActionPerformed(evt);
             }
         });
-        add(btnForward, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 480, 260, -1));
+        add(btnForward, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, 270, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed

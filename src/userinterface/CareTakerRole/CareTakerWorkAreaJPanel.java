@@ -128,7 +128,7 @@ public class CareTakerWorkAreaJPanel extends javax.swing.JPanel {
             workCareTakerJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 410, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 490, 120));
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -138,11 +138,11 @@ public class CareTakerWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 90, -1));
 
         assignCareTaker.setBackground(new java.awt.Color(0, 153, 153));
         assignCareTaker.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -168,7 +168,7 @@ public class CareTakerWorkAreaJPanel extends javax.swing.JPanel {
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("<name>");
-        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 90, 20));
+        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 190, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
