@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.SupplimentsRole;
+package userinterface.SupportRole;
 
 import model.MailNew;
-import model.WorkQueue.SupplimentsWorkRequest;
+import model.WorkQueue.SupportWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.logging.Level;
@@ -22,13 +22,13 @@ import userinterface.DoctorRole.DoctorWorkAreaMainJPanel;
 public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
-    SupplimentsWorkRequest request;
+    SupportWorkRequest request;
     /**
      * Creates new form ProcessWorkRequestJPanel
      */
    
 
-   public  ProcessWorkRequestJPanel(JPanel userProcessContainer, SupplimentsWorkRequest request) {
+   public  ProcessWorkRequestJPanel(JPanel userProcessContainer, SupportWorkRequest request) {
        initComponents();
         this.userProcessContainer = userProcessContainer;
         this.request = request;
@@ -101,7 +101,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        SupplimentsWorkAreaJPanel dwjp = (SupplimentsWorkAreaJPanel) component;
+        SupportWorkAreaJPanel dwjp = (SupportWorkAreaJPanel) component;
         dwjp.populateTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
@@ -122,15 +122,15 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
             
         }else {
             
-        request.setSupplimentinfo(resultJTextField.getText());
-        request.setSupplimentStatus("completed");
+        request.setSupportinfo(resultJTextField.getText());
+        request.setSupportStatus("completed");
         request.setStatus("Completed");
         
          JOptionPane.showMessageDialog(null,"Request Completed !!");
          
          
            try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Updated status for Suppliment ","Suppliment Team has allocated you a dietician, Hope to see you in good state!! ");
+                   MailNew m=new MailNew("steveaeddemo@gmail.com","Updated status for Support ","Support Team has allocated you a dietician, Hope to see you in good state!! ");
                } catch (MessagingException ex) {
                    Logger.getLogger(DoctorWorkAreaMainJPanel.class.getName()).log(Level.SEVERE, null, ex);
                }

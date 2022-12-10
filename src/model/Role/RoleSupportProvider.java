@@ -10,17 +10,17 @@ import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.SupplimentsRole.SupplimentsWorkAreaJPanel;
+import userinterface.SupportRole.SupportWorkAreaJPanel;
 
 /**
  *
  * @author Mitali
  */
-public class RoleSupplimentProvider extends Role {
+public class RoleSupportProvider extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-         return new SupplimentsWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
+         return new SupportWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
          
     }
     

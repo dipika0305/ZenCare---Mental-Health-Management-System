@@ -6,23 +6,23 @@
 package model.Organization;
 
 import model.Role.Role;
-import model.Role.RoleSupplimentProvider;
+import model.Role.RoleSupportProvider;
 import java.util.ArrayList;
 
 /**
  *
  * @author Vidhi
  */
-public class OrgSuppliments  extends Organization{
+public class OrgSupport  extends Organization{
 
-    public OrgSuppliments() {
-        super(Organization.Type.Suppliments.getValue()); 
+    public OrgSupport() {
+        super(Organization.Type.Support.getValue()); 
     }
 
     @Override
     public ArrayList<Role> getSupportedRole() {
            ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleSupplimentProvider());
+        roles.add(new RoleSupportProvider());
         return roles;
     }
     

@@ -34,7 +34,7 @@ public abstract class Organization {
         Claims("Claims"),
         Caretaker("Caretaker"),
         Nurse("Nurse"),
-        Suppliments("Suppliments"),
+        Support("Support"),
         Acommittee("Allocatting Committee"),
         Gcomittee("Granting Comittee")
         ;

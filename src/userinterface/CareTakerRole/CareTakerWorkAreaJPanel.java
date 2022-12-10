@@ -12,7 +12,7 @@ import model.Organization.OrgNurse;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import model.WorkQueue.CareTakerWorkRequest;
-import model.WorkQueue.SupplimentsWorkRequest;
+import model.WorkQueue.SupportWorkRequest;
 import model.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.util.HashMap;
