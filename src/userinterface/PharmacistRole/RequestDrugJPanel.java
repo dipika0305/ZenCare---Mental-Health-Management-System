@@ -61,45 +61,48 @@ public class RequestDrugJPanel extends javax.swing.JPanel {
         label2 = new java.awt.Label();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        requestTestJButton.setBackground(new java.awt.Color(255, 255, 255));
-        requestTestJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        requestTestJButton.setText("Request Quantity");
+        requestTestJButton.setBackground(new java.awt.Color(0, 153, 153));
+        requestTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setText("REQUEST QUANTITY");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, -1, -1));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Quantity");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
-        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 160, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, -1, -1));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        backJButton.setText("<<Back");
+        messageJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 160, -1));
+
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(0, 153, 153));
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 170, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         enterpriseLabel.setText("LAB TEST");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 170, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 170, 30));
 
-        label2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Patient Name");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 170, -1));
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 110, -1));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("<name>");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 160, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
