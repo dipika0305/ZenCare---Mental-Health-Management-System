@@ -71,10 +71,10 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        organizationJTable.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        organizationJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -107,39 +107,41 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 105, 616, 146));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 440, 210));
 
-        addJButton.setBackground(new java.awt.Color(255, 255, 255));
-        addJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        addJButton.setText("Add Organization");
+        addJButton.setBackground(new java.awt.Color(0, 153, 153));
+        addJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        addJButton.setForeground(new java.awt.Color(255, 255, 255));
+        addJButton.setText("ADD ORGANIZATION");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(775, 533, -1, -1));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 490, -1, -1));
 
-        organizationJComboBox.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        organizationJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 448, 160, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 170, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Organization Type ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(527, 452, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, 20));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        backJButton.setText("<< Back");
+        backJButton.setBackground(new java.awt.Color(0, 153, 153));
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(67, 533, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 490, 170, -1));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 24)); // NOI18N
-        jLabel2.setText("Organization Table :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 40, 335, -1));
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel2.setText("MANAGE ORAGNIZATION");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 335, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJButtonActionPerformed

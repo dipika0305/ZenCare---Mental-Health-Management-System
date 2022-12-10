@@ -90,7 +90,7 @@ public class CareTakerWorkAreaJPanel extends javax.swing.JPanel {
         careTakerCreate = new javax.swing.JButton();
         name = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         workCareTakerJTable.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
@@ -128,45 +128,47 @@ public class CareTakerWorkAreaJPanel extends javax.swing.JPanel {
             workCareTakerJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 410, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 410, 120));
 
-        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, -1, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
 
-        assignCareTaker.setBackground(new java.awt.Color(255, 255, 255));
-        assignCareTaker.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        assignCareTaker.setText("Assign Care Taker To me");
+        assignCareTaker.setBackground(new java.awt.Color(0, 153, 153));
+        assignCareTaker.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignCareTaker.setForeground(new java.awt.Color(255, 255, 255));
+        assignCareTaker.setText("ASSIGN TO ME");
         assignCareTaker.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignCareTakerActionPerformed(evt);
             }
         });
-        add(assignCareTaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, -1, -1));
+        add(assignCareTaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 390, 150, -1));
 
-        careTakerCreate.setBackground(new java.awt.Color(255, 255, 255));
-        careTakerCreate.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        careTakerCreate.setText("Process");
+        careTakerCreate.setBackground(new java.awt.Color(0, 153, 153));
+        careTakerCreate.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        careTakerCreate.setForeground(new java.awt.Color(255, 255, 255));
+        careTakerCreate.setText("PROCESS");
         careTakerCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 careTakerCreateActionPerformed(evt);
             }
         });
-        add(careTakerCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, -1, -1));
+        add(careTakerCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 150, -1));
 
-        name.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("<name>");
-        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 90, 20));
+        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 90, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed

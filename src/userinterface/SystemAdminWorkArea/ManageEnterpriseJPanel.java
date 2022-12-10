@@ -85,9 +85,10 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        enterpriseJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -114,50 +115,56 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             enterpriseJTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 523, 95));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 560, 130));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Network");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, -1, -1));
 
+        networkJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         networkJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 136, -1));
+        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 136, -1));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, -1, -1));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 136, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        nameJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 136, -1));
+
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel3.setText("Enterprise Type");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, -1, -1));
 
+        enterpriseTypeJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseTypeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(enterpriseTypeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 136, -1));
+        add(enterpriseTypeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, 136, -1));
 
-        submitJButton.setBackground(new java.awt.Color(255, 255, 255));
-        submitJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        submitJButton.setText("Submit");
+        submitJButton.setBackground(new java.awt.Color(0, 153, 153));
+        submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
+        submitJButton.setText("SUBMIT");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 590, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 140, -1));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        backJButton.setText("<< Back");
+        backJButton.setBackground(new java.awt.Color(0, 153, 153));
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 590, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 620, 140, -1));
 
-        jLabel6.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel6.setText("MANAGE ENTERPRISE ");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed

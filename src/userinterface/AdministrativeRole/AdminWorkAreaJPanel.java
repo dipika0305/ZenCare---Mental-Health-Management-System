@@ -43,15 +43,16 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel = new javax.swing.JLabel();
         manageEmployeeJButton1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 24)); // NOI18N
-        jLabel1.setText("My Work Area -Adminstrative Role");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel1.setText("ENTERPRISE ADMIN");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
 
-        userJButton.setBackground(new java.awt.Color(255, 255, 255));
-        userJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        userJButton.setBackground(new java.awt.Color(0, 153, 153));
+        userJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        userJButton.setForeground(new java.awt.Color(255, 255, 255));
         userJButton.setText("Manage User");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,8 +61,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 260, -1));
 
-        managePAtientJButton.setBackground(new java.awt.Color(255, 255, 255));
-        managePAtientJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        managePAtientJButton.setBackground(new java.awt.Color(0, 153, 153));
+        managePAtientJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        managePAtientJButton.setForeground(new java.awt.Color(255, 255, 255));
         managePAtientJButton.setText("Manage Patient");
         managePAtientJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,8 +72,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(managePAtientJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 260, -1));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(255, 255, 255));
-        manageOrganizationJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        manageOrganizationJButton.setBackground(new java.awt.Color(0, 153, 153));
+        manageOrganizationJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageOrganizationJButton.setText("Manage Organization");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,13 +83,17 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 260, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 160, 30));
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 130, 10));
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 90, 30));
 
-        manageEmployeeJButton1.setBackground(new java.awt.Color(255, 255, 255));
-        manageEmployeeJButton1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        valueLabel.setText("<name>");
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, 130, 20));
+
+        manageEmployeeJButton1.setBackground(new java.awt.Color(0, 153, 153));
+        manageEmployeeJButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        manageEmployeeJButton1.setForeground(new java.awt.Color(255, 255, 255));
         manageEmployeeJButton1.setText("Manage Employee");
         manageEmployeeJButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

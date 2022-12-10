@@ -93,7 +93,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnManageEnterprise = new javax.swing.JButton();
         btnManageAdmin = new javax.swing.JButton();
 
-        setLayout(new java.awt.BorderLayout());
+        setLayout(null);
 
         jTree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
             public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
@@ -107,92 +107,74 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 118, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 820, Short.MAX_VALUE)
         );
 
         jSplitPane.setLeftComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setMinimumSize(new java.awt.Dimension(500, 500));
+        jPanel2.setPreferredSize(new java.awt.Dimension(500, 500));
+        jPanel2.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         jLabel1.setText("Selected Node:");
+        jPanel2.add(jLabel1);
+        jLabel1.setBounds(250, 40, 104, 17);
 
         lblSelectedNode.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         lblSelectedNode.setText("<View_selected_node>");
+        jPanel2.add(lblSelectedNode);
+        lblSelectedNode.setBounds(370, 40, 165, 17);
 
-        btnManageNetwork.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageNetwork.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        btnManageNetwork.setBackground(new java.awt.Color(0, 153, 153));
+        btnManageNetwork.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CMmanage_emp.png"))); // NOI18N
         btnManageNetwork.setText("Manage Network");
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageNetworkActionPerformed(evt);
             }
         });
+        jPanel2.add(btnManageNetwork);
+        btnManageNetwork.setBounds(260, 150, 269, 56);
 
-        btnManageEnterprise.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageEnterprise.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        btnManageEnterprise.setBackground(new java.awt.Color(0, 153, 153));
+        btnManageEnterprise.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CMbuilding.jpg"))); // NOI18N
         btnManageEnterprise.setText("Manage Enterprise");
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
+        jPanel2.add(btnManageEnterprise);
+        btnManageEnterprise.setBounds(260, 450, 269, 56);
 
-        btnManageAdmin.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageAdmin.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        btnManageAdmin.setBackground(new java.awt.Color(0, 153, 153));
+        btnManageAdmin.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CMadmin.jpg"))); // NOI18N
         btnManageAdmin.setText("Manage Enterprise Admin");
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageAdminActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblSelectedNode))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(91, 91, 91)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnManageAdmin)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btnManageEnterprise, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnManageNetwork, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addContainerGap(177, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(lblSelectedNode))
-                .addGap(54, 54, 54)
-                .addComponent(btnManageNetwork)
-                .addGap(18, 18, 18)
-                .addComponent(btnManageEnterprise)
-                .addGap(18, 18, 18)
-                .addComponent(btnManageAdmin)
-                .addContainerGap(188, Short.MAX_VALUE))
-        );
+        jPanel2.add(btnManageAdmin);
+        btnManageAdmin.setBounds(260, 300, 270, 56);
 
         jSplitPane.setRightComponent(jPanel2);
 
-        add(jSplitPane, java.awt.BorderLayout.CENTER);
+        add(jSplitPane);
+        jSplitPane.setBounds(0, 0, 1110, 820);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageNetworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageNetworkActionPerformed

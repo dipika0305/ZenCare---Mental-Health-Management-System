@@ -5,7 +5,6 @@
 package userinterface;
 
 import model.EcoSys;
-//import model.DB4OUtil.DB4OUtil;
 import model.Enterprise.Enterprise;
 import model.Network.Network;
 import model.Organization.Organization;
@@ -15,6 +14,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import model.DB4OUtil.DB4OUtil;
 
 /**
  *
@@ -26,11 +26,12 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     private EcoSys system;
-    //private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
     public MainJFrame() {
+        
         initComponents();
-        //system = dB4OUtil.retrieveSystem();
+        system = dB4OUtil.retrieveSystem();
         this.setSize(1500, 1004);
         
         //jLabel4.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("userinterface\\b438ca80294986a80c960c712fb06434.jpg")).getImage().getScaledInstance(200, 50, Image.SCALE_SMOOTH)));
@@ -59,7 +60,6 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -134,17 +134,12 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(0, 153, 153));
         container.setMaximumSize(new java.awt.Dimension(1143, 546));
         container.setMinimumSize(new java.awt.Dimension(1143, 546));
-        container.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 27)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Mental Healthcare Management System");
-        container.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 530, 60));
+        container.setLayout(new java.awt.CardLayout());
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/img.jpg"))); // NOI18N
         jLabel3.setMaximumSize(new java.awt.Dimension(1143, 546));
-        container.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 750, 420));
+        container.add(jLabel3, "card3");
 
         jSplitPane1.setRightComponent(container);
 
@@ -230,7 +225,7 @@ public class MainJFrame extends javax.swing.JFrame {
         container.add("blank", blankJP);
         CardLayout crdLyt = (CardLayout) container.getLayout();
         crdLyt.next(container);
-       // dB4OUtil.storeSystem(system);
+        dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_logoutJButtonActionPerformed
 
     /**
@@ -276,7 +271,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton loginJButton;
