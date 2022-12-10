@@ -7,11 +7,11 @@ package userinterface.NurseRole;
 import model.Enterprise.Enterprise;
 import model.Organization.OrgCareTaker;
 import model.Organization.Organization;
-import model.Organization.OrgSuppliments;
+import model.Organization.OrgSupport;
 import model.UserAccount.UserAccount;
 import model.WorkQueue.CareTakerWorkRequest;
 import model.WorkQueue.PatientWorkRequest;
-import model.WorkQueue.SupplimentsWorkRequest;
+import model.WorkQueue.SupportWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.HashMap;
@@ -186,20 +186,20 @@ public class ProcessNurseRequestJPanel extends javax.swing.JPanel {
         try{
         String message = dieticianInfo.getText();
 
-        SupplimentsWorkRequest request1 = new SupplimentsWorkRequest();
+        SupportWorkRequest request1 = new SupportWorkRequest();
 
-        request1.setSupplimentinfo(dieticianInfo.getText());
+        request1.setSupportinfo(dieticianInfo.getText());
         request1.setSender(account);
         request1.setStatus("Finding Dietician");
         request1.setType("Patient");
-        request1.setSupplimentStatus("pending");
-        request1.setSupplimentreceiver(null);
+        request1.setSupportStatus("pending");
+        request1.setSupportreceiver(null);
         request1.setPatient(request.getPatientName());
         request1.setState(request.getPatientState());
 
         Organization org = null;
         for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof OrgSuppliments) {
+            if (organization instanceof OrgSupport) {
                 org = organization;
                 break;
             }

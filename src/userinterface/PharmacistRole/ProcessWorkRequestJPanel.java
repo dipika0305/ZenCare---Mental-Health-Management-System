@@ -7,7 +7,7 @@ package userinterface.PharmacistRole;
 import model.MailNew;
 import userinterface.PharmacistRole.*;
 import model.WorkQueue.MedicineWorkRequest;
-import model.WorkQueue.SupplimentsWorkRequest;
+import model.WorkQueue.SupportWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.logging.Level;

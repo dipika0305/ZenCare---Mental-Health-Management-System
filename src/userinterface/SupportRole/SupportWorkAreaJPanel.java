@@ -2,15 +2,15 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.SupplimentsRole;
+package userinterface.SupportRole;
 
 import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.Graph;
 import model.Organization.Organization;
-import model.Organization.OrgSuppliments;
+import model.Organization.OrgSupport;
 import model.UserAccount.UserAccount;
-import model.WorkQueue.SupplimentsWorkRequest;
+import model.WorkQueue.SupportWorkRequest;
 import model.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.util.HashMap;
@@ -22,25 +22,25 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Vidhi
  */
-public class SupplimentsWorkAreaJPanel extends javax.swing.JPanel {
+public class SupportWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private EcoSys business;
+    private EcoSys model;
     private UserAccount userAccount;
-    private OrgSuppliments supplimentsOrganization;
+    private OrgSupport orgSupport;
     Enterprise enterprise;
      Organization organization;
      HashMap<String,Integer> m;
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public SupplimentsWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
+    public SupportWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
-        this.business = business;
-        this.supplimentsOrganization = (OrgSuppliments)organization;
+        this.model = business;
+        this.orgSupport = (OrgSupport)organization;
         this.enterprise=enterprise;
         this.organization=organization;
         valueLabel.setText(enterprise.getName());
@@ -52,17 +52,17 @@ public class SupplimentsWorkAreaJPanel extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-        for(WorkRequest request : supplimentsOrganization.getWorkQueue().getWorkRequestList()){
+        for(WorkRequest request : orgSupport.getWorkQueue().getWorkRequestList()){
             
             Object[] row = new Object[4];
             row[0] = request;
             row[1] = request.getSender();
-              if(((SupplimentsWorkRequest)request).getSupplimentreceiver()!=null){
-                row[2] = ((SupplimentsWorkRequest)request).getSupplimentreceiver();
+              if(((SupportWorkRequest)request).getSupportreceiver()!=null){
+                row[2] = ((SupportWorkRequest)request).getSupportreceiver();
             }else{
                 row[2] = null;
             }
-            row[3] = ((SupplimentsWorkRequest)request).getSupplimentStatus();
+            row[3] = ((SupportWorkRequest)request).getSupportStatus();
             
             model.addRow(row);
         }
@@ -175,18 +175,18 @@ public class SupplimentsWorkAreaJPanel extends javax.swing.JPanel {
             return;
         }
         
-          SupplimentsWorkRequest request = (SupplimentsWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
+          SupportWorkRequest request = (SupportWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
         
         
-        if(request.getSupplimentreceiver() == null){
-            request.setSupplimentreceiver(userAccount);
+        if(request.getSupportreceiver() == null){
+            request.setSupportreceiver(userAccount);
             request.setStatus("Pending");
             populateTable();
             JOptionPane.showMessageDialog(null, "You are assigned as a dietician to this patient!!");
-        }else if(request.getSupplimentreceiver() == userAccount) {
+        }else if(request.getSupportreceiver() == userAccount) {
              JOptionPane.showMessageDialog(null, "you are already the dietician for this patient!!");
             return;
-        }else if(request.getSupplimentreceiver()!=userAccount){
+        }else if(request.getSupportreceiver()!=userAccount){
             JOptionPane.showMessageDialog(null, "Dieticain already assigned!!");
             return;
         }else{
@@ -206,20 +206,20 @@ public class SupplimentsWorkAreaJPanel extends javax.swing.JPanel {
             return;
         }
         
-        SupplimentsWorkRequest request = (SupplimentsWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
+        SupportWorkRequest request = (SupportWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
      
-        if(request.getSupplimentreceiver()==null){
+        if(request.getSupportreceiver()==null){
              JOptionPane.showMessageDialog(null, "Assign a dietician first!!!!");
             return;
         }
-        else if(request.getSupplimentreceiver() == userAccount){
+        else if(request.getSupportreceiver() == userAccount){
             request.setStatus("Processing");
         
             ProcessWorkRequestJPanel processWorkRequestJPanel = new ProcessWorkRequestJPanel(userProcessContainer, request);
             userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
             layout.next(userProcessContainer);
-        }else if(request.getSupplimentreceiver()!=userAccount){
+        }else if(request.getSupportreceiver()!=userAccount){
              JOptionPane.showMessageDialog(null, "You cant access this patient!!");
             return;
         }else{
@@ -247,7 +247,7 @@ public class SupplimentsWorkAreaJPanel extends javax.swing.JPanel {
                //&& request.getReceiver().equals(userAccount))
            {
                     ///based on granting status we can know- for ex how many are approved, rejected , pending
-                     String key=((SupplimentsWorkRequest)request).getSupplimentStatus();
+                     String key=((SupportWorkRequest)request).getSupportStatus();
                     if(request.getState()!=null)
                     {
                         map.put(key, map.containsKey(key)?map.get(key)+1:1);

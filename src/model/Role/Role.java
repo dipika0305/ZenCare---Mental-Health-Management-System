@@ -29,7 +29,7 @@ public abstract class Role {
         Caretaker("Caretaker"),
         Allocator("Allocator"),
         Granter("Granter"),
-        SupplimentProvider("Suppliment Provider")
+        SupportProvider("Support Provider")
         ;
         
         private String value;
