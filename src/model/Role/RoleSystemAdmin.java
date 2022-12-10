@@ -8,8 +8,8 @@ import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
-//import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
@@ -19,7 +19,7 @@ public class RoleSystemAdmin extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys system) {
-        return null;
+        return new SystemAdminWorkAreaJPanel(userProcessContainer, system);
     }
     
 }

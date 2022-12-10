@@ -10,6 +10,7 @@ import model.Organization.OrgMedicalCoder;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
+import userinterface.MedicalCoderRole.MedicalCoderWorkAreaJPanel;
 //import userinterface.RoleMedicalCoder.MedicalCoderWorkAreaJPanel;
 
 /**
@@ -20,7 +21,7 @@ public class RoleMedicalCoder extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return null;
+        return new MedicalCoderWorkAreaJPanel(userProcessContainer, account, (OrgMedicalCoder)organization, enterprise);
     }
     
 }

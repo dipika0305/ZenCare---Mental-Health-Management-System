@@ -10,8 +10,7 @@ import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-//import userinterface.CareTakerRole.CareTakerWorkAreaJPanel;
-//import userinterface.LabAssistantRole.LabAssistantWorkAreaJPanel;
+import userinterface.CareTakerRole.CareTakerWorkAreaJPanel;
 
 /**
  *
@@ -21,7 +20,7 @@ public class RoleCaretaker extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-       return null;
+       return new CareTakerWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
     }
     
 }

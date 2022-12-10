@@ -9,7 +9,7 @@ import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-//import userinterface.RoleDrugManufacturer.DrugManufacturerWorkAreaJPanel;
+import userinterface.DrugManufacturerRole.DrugManufacturerWorkAreaJPanel;
 
 /**
  *
@@ -19,7 +19,7 @@ public class RoleDrugManufacturer extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return null;
+        return new DrugManufacturerWorkAreaJPanel(userProcessContainer, account, organization, business, enterprise);
     }
     
 }

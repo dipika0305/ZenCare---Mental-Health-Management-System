@@ -8,8 +8,8 @@ import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
-//import userinterface.RoleLabExaminer.LabAssistantWorkAreaJPanel;
 import javax.swing.JPanel;
+import userinterface.LabAssistantRole.LabAssistantWorkAreaJPanel;
 
 /**
  *
@@ -19,7 +19,7 @@ public class RoleLabExaminer extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return null;
+        return new LabAssistantWorkAreaJPanel(userProcessContainer, account, enterprise, organization, business);
     }
     
 }
