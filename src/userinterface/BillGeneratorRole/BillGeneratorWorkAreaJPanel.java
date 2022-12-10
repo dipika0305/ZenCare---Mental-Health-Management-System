@@ -165,10 +165,10 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         processedClaims = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userWorkRequestJTable.setFont(new java.awt.Font("Perpetua Titling MT", 0, 13)); // NOI18N
+        userWorkRequestJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         userWorkRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -204,47 +204,49 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
             userWorkRequestJTable.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 490, 96));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 580, 96));
 
-        assignJButton.setBackground(new java.awt.Color(255, 255, 255));
-        assignJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        assignJButton.setText("Assign to me");
+        assignJButton.setBackground(new java.awt.Color(0, 153, 153));
+        assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
+        assignJButton.setText("ASSIGN TO ME");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 600, -1, -1));
 
-        processJButton.setBackground(new java.awt.Color(255, 255, 255));
-        processJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        processJButton.setText("Process");
+        processJButton.setBackground(new java.awt.Color(0, 153, 153));
+        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 255, 255));
+        processJButton.setText("PROCESS");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, -1, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, -1, -1));
 
-        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 40, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 90, -1, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         valueLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         valueLabel.setToolTipText("");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, -1));
 
-        updatedRequestJTable1.setFont(new java.awt.Font("Perpetua Titling MT", 0, 13)); // NOI18N
+        updatedRequestJTable1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         updatedRequestJTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -282,20 +284,20 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
             updatedRequestJTable1.getColumnModel().getColumn(6).setResizable(false);
         }
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 590, 96));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 590, 120));
 
         pendingjCheckBox.setBackground(new java.awt.Color(255, 255, 255));
-        pendingjCheckBox.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        pendingjCheckBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         pendingjCheckBox.setText("Pending Request");
         pendingjCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pendingjCheckBoxActionPerformed(evt);
             }
         });
-        add(pendingjCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
+        add(pendingjCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, -1, -1));
 
         processingjCheckBox.setBackground(new java.awt.Color(255, 255, 255));
-        processingjCheckBox.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        processingjCheckBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         processingjCheckBox.setText("Processing Request");
         processingjCheckBox.setToolTipText("");
         processingjCheckBox.addActionListener(new java.awt.event.ActionListener() {
@@ -303,29 +305,29 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
                 processingjCheckBoxActionPerformed(evt);
             }
         });
-        add(processingjCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, -1, -1));
+        add(processingjCheckBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 153, 153));
         jButton1.setText("Filter ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 280, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 310, 100, -1));
 
         pendingClaimsjCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
-        pendingClaimsjCheckBox1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        pendingClaimsjCheckBox1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         pendingClaimsjCheckBox1.setText("Pending in Claims");
         pendingClaimsjCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pendingClaimsjCheckBox1ActionPerformed(evt);
             }
         });
-        add(pendingClaimsjCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 280, -1, -1));
+        add(pendingClaimsjCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, -1, -1));
 
-        workRequestJTable2.setFont(new java.awt.Font("Perpetua Titling MT", 0, 13)); // NOI18N
+        workRequestJTable2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -361,29 +363,30 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable2.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 490, 96));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 490, 120));
 
-        submitRequests.setBackground(new java.awt.Color(255, 255, 255));
-        submitRequests.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        submitRequests.setText("Submit  Requests");
+        submitRequests.setBackground(new java.awt.Color(0, 153, 153));
+        submitRequests.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitRequests.setForeground(new java.awt.Color(255, 255, 255));
+        submitRequests.setText("SUBMIT REQUEST");
         submitRequests.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitRequestsActionPerformed(evt);
             }
         });
-        add(submitRequests, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 530, -1, -1));
+        add(submitRequests, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 600, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("MY CLAIMS");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("INCOMING BILLLING REQUEST");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, -1, -1));
 
-        processedClaims.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        processedClaims.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         processedClaims.setText("VIEW PROCESSED CLAIMS ");
-        add(processedClaims, new org.netbeans.lib.awtextra.AbsoluteConstraints(789, 380, 190, -1));
+        add(processedClaims, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 410, 230, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

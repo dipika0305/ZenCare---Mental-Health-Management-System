@@ -173,6 +173,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         txtName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNameActionPerformed(evt);
@@ -183,6 +184,8 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("PATIENT INFORMATION");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 280, 30));
+
+        txtAge.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 140, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -254,6 +257,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         jLabel5.setText("EmailAddress");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, -1, -1));
 
+        txtemail.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         txtemail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtemailActionPerformed(evt);
@@ -297,12 +301,15 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         label2.setText("Insurance Info :");
         add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 145, -1));
 
+        cardno.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         cardno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cardnoActionPerformed(evt);
             }
         });
         add(cardno, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 180, 140, -1));
+
+        cardholder.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(cardholder, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 230, 140, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -313,7 +320,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         jLabel7.setText("Insurance Card Holder");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, -1, 20));
 
-        statesJComboBox.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        statesJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         statesJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "choose state", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "WA", "WV", "WI", "WY" }));
         statesJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -335,6 +342,8 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
             }
         });
         add(btnSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 500, -1, -1));
+
+        txtPatient.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(txtPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 190, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 153, 153));

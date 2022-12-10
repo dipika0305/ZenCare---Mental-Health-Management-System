@@ -57,27 +57,26 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 290, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Result");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 190, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, -1, -1));
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 190, -1));
 
-        backJButton.setBackground(new java.awt.Color(0, 153, 153));
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setForeground(new java.awt.Color(0, 153, 153));
         backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 140, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 140, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setText("ALLOCATOR RESULT");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

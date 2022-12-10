@@ -114,11 +114,9 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, 100, -1));
         add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 210, -1));
 
-        backJButton.setBackground(new java.awt.Color(0, 153, 153));
         backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setForeground(new java.awt.Color(0, 153, 153));
         backJButton.setText("BACK");
-        backJButton.setActionCommand("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);

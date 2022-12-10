@@ -136,10 +136,12 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         updateRequestJBTN = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        submitJButton.setBackground(new java.awt.Color(0, 153, 153));
+        submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("FORWARD TO CLAIMS");
         submitJButton.setToolTipText("");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -147,79 +149,88 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 190, -1));
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        backJButton.setText("<<BACK");
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(0, 153, 153));
+        backJButton.setText("BACK");
         backJButton.setToolTipText("");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 560, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 670, 160, -1));
 
-        PatientName.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
+        PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setName(""); // NOI18N
-        add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 129, -1));
+        add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 190, -1));
 
-        label1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        label1.setText("Insurance Information :");
-        add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, -1, -1));
+        label1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        label1.setText("INSURANCE INFORMATION");
+        add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, -1, -1));
 
-        label2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        label2.setText("Patient Name :");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 190, -1));
+        label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        label2.setText("Patient Name");
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 120, -1));
 
-        label3.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        label3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label3.setText("Card Number");
-        add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 114, 20));
+        add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 114, 20));
 
-        label4.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        label4.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label4.setText("Amount Requested");
-        add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 190, -1));
+        add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 190, -1));
 
         Cardnumber.setEditable(false);
         Cardnumber.setEnabled(false);
+        Cardnumber.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         Cardnumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CardnumberActionPerformed(evt);
             }
         });
-        add(Cardnumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 190, -1));
+        add(Cardnumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 160, 190, -1));
 
         amountRequested.setEditable(false);
         amountRequested.setEnabled(false);
-        add(amountRequested, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 190, 190, -1));
+        amountRequested.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(amountRequested, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 240, 190, -1));
 
-        label5.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        label5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label5.setText("Card Holder Name");
-        add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 200, -1));
+        add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 200, -1));
 
         cardHolderName1.setEditable(false);
         cardHolderName1.setEnabled(false);
-        add(cardHolderName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 190, -1));
+        cardHolderName1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(cardHolderName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, 190, -1));
 
-        label6.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        label6.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label6.setText("Message*");
-        add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 320, 114, -1));
-        add(messagetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 190, -1));
+        add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 114, -1));
+
+        messagetxt.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(messagetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 190, -1));
 
         statetext.setEditable(false);
+        statetext.setBackground(new java.awt.Color(255, 255, 255));
+        statetext.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         statetext.setEnabled(false);
-        add(statetext, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 230, 190, -1));
+        add(statetext, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 280, 190, -1));
 
-        label8.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        label8.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label8.setText("State");
-        add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 140, 20));
+        add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 140, 20));
 
         Emailtxt.setEditable(false);
-        add(Emailtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 190, -1));
+        Emailtxt.setBackground(new java.awt.Color(255, 255, 255));
+        Emailtxt.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        add(Emailtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 320, 190, -1));
 
-        label9.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        label9.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label9.setText("Email");
-        add(label9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 114, 20));
+        add(label9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 114, 20));
 
         updatedRequestJTable1.setFont(new java.awt.Font("Perpetua Titling MT", 0, 13)); // NOI18N
         updatedRequestJTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -249,20 +260,22 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(updatedRequestJTable1);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 880, 80));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 560, 880, 90));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        jLabel1.setText("Response from Claims :");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 300, 30));
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jLabel1.setText("CLAIM STATUS");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 520, 130, 30));
 
-        updateRequestJBTN.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        updateRequestJBTN.setText("Update Request");
+        updateRequestJBTN.setBackground(new java.awt.Color(0, 153, 153));
+        updateRequestJBTN.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        updateRequestJBTN.setForeground(new java.awt.Color(255, 255, 255));
+        updateRequestJBTN.setText("UPDATE REQUEST");
         updateRequestJBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateRequestJBTNActionPerformed(evt);
             }
         });
-        add(updateRequestJBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 560, -1, -1));
+        add(updateRequestJBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 670, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

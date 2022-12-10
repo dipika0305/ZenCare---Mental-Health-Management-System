@@ -90,38 +90,40 @@ public class ClaimsWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        assignJButton.setBackground(new java.awt.Color(255, 255, 255));
-        assignJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        assignJButton.setText("Assign to me");
+        assignJButton.setBackground(new java.awt.Color(0, 153, 153));
+        assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
+        assignJButton.setText("ASSIGN TO ME");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 220, 40));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, 170, 30));
 
-        processJButton.setBackground(new java.awt.Color(255, 255, 255));
-        processJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
-        processJButton.setText("Process");
+        processJButton.setBackground(new java.awt.Color(0, 153, 153));
+        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 255, 255));
+        processJButton.setText("PROCESS");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 320, 130, 40));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 370, 170, 30));
 
-        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, -1, -1));
 
         workRequestJTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -157,15 +159,15 @@ public class ClaimsWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable1.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 680, 96));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 680, 110));
 
-        enterpriseLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EnterPrise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, 40));
+        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        enterpriseLabel.setText("Enterprise :");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, -1, 40));
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("<name>");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 90, 110, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
