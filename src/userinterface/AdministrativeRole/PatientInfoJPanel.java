@@ -5,7 +5,6 @@
  */
 package userinterface.AdministrativeRole;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
 import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.MailNew;
@@ -85,43 +84,38 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
     }
   
     
-     public void populateTable(ArrayList<WorkRequest> list){
+    public void populateTable(ArrayList<WorkRequest> list){
         DefaultTableModel model = (DefaultTableModel)workRequestJTable.getModel();
         
         model.setRowCount(0);
         
         for(WorkRequest request : list){
-             if(request.getType()!=null)
-             {if(request.getType().equals("Patient"))
-             { Object[] row = new Object[9];
+            if(request.getType()!=null) {
+                if(request.getType().equals("Patient")) {
+                     Object[] row = new Object[9];
             
-            String result = ((PatientWorkRequest) request).getPatientName();
-            row[0]=((PatientWorkRequest) request);
-            row[1] =result;
-            row[2]=request.getReceiver();
-             row[3] = request.getStatus();
-             if(((PatientWorkRequest) request).getAppointmentTime()!=null)
-             row[4]=((PatientWorkRequest) request).getAppointmentTime();
-               if(((PatientWorkRequest) request).getBillamount()!=null)
-               {
-                  row[5]=((PatientWorkRequest) request).getBillamount(); 
-               }
-               if(((PatientWorkRequest) request).getBillstatus()!=null)
-               {
-                  row[6]=((PatientWorkRequest) request).getBillstatus(); 
-               }
-                   if(((PatientWorkRequest) request).getNurseName()!=null)
-               {
-                  row[7]=((PatientWorkRequest) request).getNurseName(); 
-               }
-               if(((PatientWorkRequest) request).getRehabStatus()!=null)
-               {
-                  row[8]=((PatientWorkRequest) request).getRehabStatus(); 
-               }
-            model.addRow(row);
-             }
-             }
-            //row[1]=enterprise.getOrganizationDirectory().getOrganizationList().get(0).getSupportedRole().contains(row)
+                    String result = ((PatientWorkRequest) request).getPatientName();
+                    row[0]=((PatientWorkRequest) request);
+                    row[1] =result;
+                    row[2]=request.getReceiver();
+                    row[3] = request.getStatus();
+                    if(((PatientWorkRequest) request).getAppointmentTime()!=null)
+                        row[4]=((PatientWorkRequest) request).getAppointmentTime();
+                    if(((PatientWorkRequest) request).getBillamount()!=null) {
+                        row[5]=((PatientWorkRequest) request).getBillamount(); 
+                    }
+                    if(((PatientWorkRequest) request).getBillstatus()!=null) {
+                        row[6]=((PatientWorkRequest) request).getBillstatus(); 
+                    }
+                    if(((PatientWorkRequest) request).getNurseName()!=null) {
+                        row[7]=((PatientWorkRequest) request).getNurseName(); 
+                    }
+                    if(((PatientWorkRequest) request).getRehabStatus()!=null) {
+                        row[8]=((PatientWorkRequest) request).getRehabStatus(); 
+                    }
+                    model.addRow(row);
+                }
+            }
         }
     }
   
@@ -170,23 +164,17 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         txtPatient = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        txtName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNameActionPerformed(evt);
-            }
-        });
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 140, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_pat.png"))); // NOI18N
         jLabel1.setText("PATIENT INFORMATION");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 330, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 350, 30));
 
         txtAge.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 140, -1));
@@ -212,7 +200,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 btnSubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, 110, -1));
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 400, 110, -1));
 
         workRequestJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -224,7 +212,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "PatientWorkrequest", "Patient", "Doctor", "Status", "AppointmentTime", "Bill Amount", "Bill Status", "Nurse", "RehabStatus"
+                "Patient Work Request", "Patient", "Doctor", "Status", "Appointment Time", "Bill Amount", "Bill Status", "Nurse", "Rehab Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -255,18 +243,13 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(8).setResizable(false);
         }
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 1040, 110));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 950, 110));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setText("EmailAddress");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
 
         txtemail.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        txtemail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtemailActionPerformed(evt);
-            }
-        });
         add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 140, -1));
 
         refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -277,7 +260,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 500, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 510, -1, -1));
 
         btnReqBill.setBackground(new java.awt.Color(0, 153, 153));
         btnReqBill.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -288,7 +271,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 btnReqBillActionPerformed(evt);
             }
         });
-        add(btnReqBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 730, -1, -1));
+        add(btnReqBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 710, -1, -1));
 
         btnRehab.setBackground(new java.awt.Color(0, 153, 153));
         btnRehab.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -299,30 +282,25 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 btnRehabActionPerformed(evt);
             }
         });
-        add(btnRehab, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 730, -1, -1));
+        add(btnRehab, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 710, -1, -1));
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Insurance Info :");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 145, 20));
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, 145, 20));
 
         cardno.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        cardno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cardnoActionPerformed(evt);
-            }
-        });
-        add(cardno, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 190, 140, 30));
+        add(cardno, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 180, 140, 30));
 
         cardholder.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(cardholder, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 140, 30));
+        add(cardholder, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 230, 140, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel6.setText("Insurance Card Number");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, -1, 20));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 180, -1, 20));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel7.setText("Insurance Card Holder");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 240, -1, 20));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, -1, 20));
 
         statesJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         statesJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "choose state", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "WA", "WV", "WI", "WY" }));
@@ -345,10 +323,10 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 btnSearchActionPerformed(evt);
             }
         });
-        add(btnSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 500, -1, -1));
+        add(btnSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 510, -1, -1));
 
         txtPatient.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(txtPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 190, -1));
+        add(txtPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, 190, -1));
 
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 153, 153));
@@ -359,7 +337,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 730, 120, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 710, 120, -1));
 
         btnView.setBackground(new java.awt.Color(0, 153, 153));
         btnView.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -370,15 +348,8 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
-        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 730, -1, -1));
-
-        jButton3.setText("jButton3");
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 420, -1, -1));
+        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 710, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNameActionPerformed
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         
@@ -424,86 +395,72 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
          JOptionPane.showMessageDialog(null,"Please select a state!!)");   
         }
         else {
-        try {
-        PatientWorkRequest request = new PatientWorkRequest();
+            try {
+            PatientWorkRequest request = new PatientWorkRequest();
         
-        request.setSender(enterprise.getUserAccountDirectory().getUserAccountList().get(0));
-        request.setStatus("Sent");
-        request.setEmail(txtemail.getText());
-        request.setState(statesJComboBox.getSelectedItem().toString());
-        request.setPatientName(txtName.getText());
-        request.setAge(txtAge.getText());
-        request.setPatientState(statesJComboBox.getSelectedItem().toString());
-        request.setType("Patient");
-        //converting into big int 
-        BigInteger bigIntegerStr=new BigInteger(cardno.getText());
-        request.setCardnumber(bigIntegerStr);
+            request.setSender(enterprise.getUserAccountDirectory().getUserAccountList().get(0));
+            request.setStatus("Sent");
+            request.setEmail(txtemail.getText());
+            request.setState(statesJComboBox.getSelectedItem().toString());
+            request.setPatientName(txtName.getText());
+            request.setAge(txtAge.getText());
+            request.setPatientState(statesJComboBox.getSelectedItem().toString());
+            request.setType("Patient");
         
-        request.setCardHolder(cardholder.getText());
+            //converting into big int 
+            BigInteger bigIntegerStr=new BigInteger(cardno.getText());
+            request.setCardnumber(bigIntegerStr);
         
-         Organization org = null;
-        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()){
-            if (organization instanceof OrgDoctor){
-                org = organization;
-                break;
+            request.setCardHolder(cardholder.getText());
+        
+            Organization org = null;
+            for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()){
+                if (organization instanceof OrgDoctor){
+                    org = organization;
+                    break;
+                }
             }
-        }
-        if (org!=null){
-            org.getWorkQueue().getWorkRequestList().add(request);
-            //userAccount.getWorkQueue().getWorkRequestList().add(request);
-        }
-        JOptionPane.showMessageDialog(null,"Registration Completed!!");
-      try {
-            sendemailto();
-        } catch (Exception ex) {
-            Logger.getLogger(PatientInfoJPanel.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            if (org!=null){
+                org.getWorkQueue().getWorkRequestList().add(request);
+            }
+            JOptionPane.showMessageDialog(null,"Registration Completed!");
+            
+            try {
+                sendemailto();
+            } catch (Exception ex) {
+                Logger.getLogger(PatientInfoJPanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
-        }
-        catch (Exception ex){
-            JOptionPane.showMessageDialog(null, "There is a problem in registration !! ");
-        }
+            }
+            catch (Exception ex){
+                JOptionPane.showMessageDialog(null, "There is a problem with registration! ");
+            }
         }
         txtName.setText("");
         txtAge.setText("");
         txtemail.setText("");
         cardno.setText("");
         cardholder.setText("");
-//          txtName.setVisible(false);
-//          txtAge.setVisible(false);
-//
-//          txtemail.setVisible(false);
-//
-//          cardno.setVisible(false);
-//
-//          cardholder.setVisible(false);
 
     }//GEN-LAST:event_btnSubmitActionPerformed
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
-    populateTable();
-    txtPatient.setText("");
-    txtName.setText("");
-    txtAge.setText("");
-    txtemail.setText("");
-    cardno.setText("");
-          cardholder.setText("");
-//            txtName.setVisible(false);
-//          txtAge.setVisible(false);
-//
-//          txtemail.setVisible(false);
-//
-//          cardno.setVisible(false);
-//
-//          cardholder.setVisible(false);
+        populateTable();
+        txtPatient.setText("");
+        txtName.setText("");
+        txtAge.setText("");
+        txtemail.setText("");
+        cardno.setText("");
+        cardholder.setText("");
+
     }//GEN-LAST:event_refreshTestJButtonActionPerformed
 
     private void btnReqBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReqBillActionPerformed
-        // TODO add your handling code here:
-       int selectedRow = workRequestJTable.getSelectedRow();
+
+        int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow < 0){
-            JOptionPane.showMessageDialog(null, "Please select a row!!");
+            JOptionPane.showMessageDialog(null, "Please select a row to proceed");
             return;
         }
         else{
@@ -519,9 +476,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         if(request.getBillamount()!=null)
         {request.setBillstatus("waiting");
          Organization org = null;
-         
-            //System.out.println(business.getNetworkList().get(0).getEnterpriseDirectory().getEnterpriseList());
-         
+                  
          for(Organization organization : business.getNetworkList().get(0).getEnterpriseDirectory().getEnterpriseList().get(2).getOrganizationDirectory().getOrganizationList()){
              
        // for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()){
@@ -534,11 +489,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
             org.getWorkQueue().getWorkRequestList().add(request);
             //System.out.println(request.getReceiver());
         }
-//        try {
-//            sendemailto();
-//        } catch (Exception ex) {
-//            Logger.getLogger(PatientInfoJPanel.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+
         JOptionPane.showMessageDialog(null, "Request Sent to billing");
         }
         else
@@ -548,19 +499,17 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         }
         txtName.setText("");
         txtAge.setText("");
-        //txtSttxtNameate.setText("");
         txtemail.setText("");
         cardno.setText("");
-          cardholder.setText("");
+        cardholder.setText("");
     }//GEN-LAST:event_btnReqBillActionPerformed
 
     private void btnRehabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRehabActionPerformed
-        // TODO add your handling code here:
-                // TODO add your handling code here:
+        
        int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow < 0){
-            JOptionPane.showMessageDialog(null, " Please Select a row");
+            JOptionPane.showMessageDialog(null, "Please select a row to proceed");
             return;
         }
             
@@ -582,24 +531,10 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         }
         if (org!=null){
             org.getWorkQueue().getWorkRequestList().add(request);
-            //userAccount.getWorkQueue().getWorkRequestList().add(request);
         }
-//        try {
-//            sendemailto();
-//        } catch (Exception ex) {
-//            Logger.getLogger(PatientInfoJPanel.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-          JOptionPane.showMessageDialog(null, "Request sent to rehab");
+        JOptionPane.showMessageDialog(null, "Request sent to rehab!");
         
     }//GEN-LAST:event_btnRehabActionPerformed
-
-    private void cardnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cardnoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cardnoActionPerformed
-
-    private void txtemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtemailActionPerformed
 
     private void statesJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statesJComboBoxActionPerformed
         // TODO add your handling code here:
@@ -628,13 +563,13 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
           int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow < 0){
-            JOptionPane.showMessageDialog(null, "Please select a row!!");
+            JOptionPane.showMessageDialog(null, "Please select a row to proceed");
             return;
         }
         else{
             PatientWorkRequest request = (PatientWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
             txtAge.setText(request.getAge());
-             txtemail.setText(request.getEmail());
+            txtemail.setText(request.getEmail());
             txtName.setText(request.getPatientName());
             cardholder.setText(request.getCardHolder());
             cardno.setText(request.getCardnumber().toString());
@@ -643,13 +578,10 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         }
         
     }//GEN-LAST:event_btnViewActionPerformed
-///UNCOMMENT IT 
     
     public void sendemailto() throws Exception{
-        //MailClass mailclass=new MailClass(txtemail.getText(),"You are registered to Brigham Hospital","Registeration-Brigham");
-        //mailclass.sendmail();
-        MailNew m=new MailNew(txtemail.getText(),"Welcome to "+ enterprise.getName(),"This is your welcome mail.");
-        MailNew m1=new MailNew("Doctoraedfall@gmail.com","Attention!-New Patient: "+ txtPatient.getText(),"New patient needs immediate attention.Please login to MENTHEAL.");
+        MailNew m = new MailNew(txtemail.getText(),"Welcome to "+ enterprise.getName(),"ZenCare welcomes you.");
+        MailNew m1 = new MailNew("janedoezencare@gmail.com","Attention!-New Patient: "+ txtPatient.getText(),"New patient needs immediate attention. Please login to ZENCARE.");
 
     }
 
@@ -669,7 +601,6 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField cardholder;
     private javax.swing.JTextField cardno;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

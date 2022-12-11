@@ -28,7 +28,7 @@ public class CareTakerProcessWorkRequestJPanel extends javax.swing.JPanel {
     UserAccount userAccount;
     Enterprise enterprise;
     /**
-     * Creates new form ProcessWorkRequestJPanel
+     * Creates a new form ProcessWorkRequestJPanel
      */
     public CareTakerProcessWorkRequestJPanel(JPanel userProcessContainer, CareTakerWorkRequest request) {
         initComponents();
@@ -93,11 +93,11 @@ public class CareTakerProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setText("Patient Name");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 130, 30));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 100, 30));
 
         ptName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         ptName.setText("<name>");
-        add(ptName, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, -1, 30));
+        add(ptName, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 190, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -114,12 +114,12 @@ public class CareTakerProcessWorkRequestJPanel extends javax.swing.JPanel {
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
         if(resultJTextField.getText().equals(""))
         {
-            JOptionPane.showMessageDialog(null,"Do not enter a empty messgae!!");
+            JOptionPane.showMessageDialog(null,"Do not enter a empty messgae!");
             return;
         }
         else if(resultJTextField.getText().length()>25)
         {
-            JOptionPane.showMessageDialog(null,"DO not exceed 25 characters limit !!");
+            JOptionPane.showMessageDialog(null,"DO not exceed 25 characters limit!");
             return;
         }
         else{
@@ -128,18 +128,13 @@ public class CareTakerProcessWorkRequestJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, "Request Completed!");
         
          
-         try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Updated areTaker RequestC "+ userAccount,"Caretaker has been assigned to you"+userAccount.getEmployee().getName());
-               } catch (MessagingException ex) {
-                   Logger.getLogger(BillGeneratorWorkAreaJPanel.class.getName()).log(Level.SEVERE, null, ex);
-               }
-        
-        
-        
-        
+        try {
+            MailNew m = new MailNew("johndoezencare@gmail.com","Updated Care Taker Request: "+ userAccount," Caretaker has been assigned to you "+userAccount.getEmployee().getName());
+        } catch (MessagingException ex) {
+            Logger.getLogger(BillGeneratorWorkAreaJPanel.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-       
+
+        } 
         
     }//GEN-LAST:event_submitJButtonActionPerformed
 

@@ -99,15 +99,9 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1.setText("Requested Amount");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
 
-        requestedAmount.setBackground(null);
         requestedAmount.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         requestedAmount.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         requestedAmount.setEnabled(false);
-        requestedAmount.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                requestedAmountActionPerformed(evt);
-            }
-        });
         add(requestedAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 180, 30));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -129,13 +123,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel3.setText("Amount to be Granted");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
 
-        grantedAmount.setBackground(null);
         grantedAmount.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        grantedAmount.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                grantedAmountActionPerformed(evt);
-            }
-        });
         add(grantedAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 180, 30));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
@@ -143,13 +131,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel4.setText("Status");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 430, -1, -1));
 
-        message.setBackground(null);
         message.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        message.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                messageActionPerformed(evt);
-            }
-        });
         add(message, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 370, 180, 30));
 
         approveBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -181,7 +163,6 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, -1, -1));
 
-        PatientName.setBackground(null);
         PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setForeground(new java.awt.Color(0, 0, 0));
         PatientName.setName(""); // NOI18N
@@ -311,24 +292,12 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         //MailClass mailclass=new MailClass(txtemail.getText(),"You are registered to Brigham Hospital","Registeration-Brigham");
         // mailclass.sendmail();
         PatientInfoJPanel p = null;
-        String text = request.getEmail();
+        String email = request.getEmail();
         String name = request.getPatient();
-        MailNew m = new MailNew(text, name + " , Your bill has been processed", "Your claim has been " + status + ". The remaing amount is now " + amount);
+        MailNew m = new MailNew(email, name + " , Your bill has been processed", "Your claim has been " + status + ". The remaing amount is now " + amount);
     }
     
     
-    private void requestedAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestedAmountActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_requestedAmountActionPerformed
-
-    private void grantedAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grantedAmountActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_grantedAmountActionPerformed
-
-    private void messageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_messageActionPerformed
-
     private void rejectedBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectedBoxActionPerformed
        approveBox.setEnabled(false); 
        grantedAmount.setEnabled(false);

@@ -168,7 +168,7 @@ public class CareTakerWorkAreaJPanel extends javax.swing.JPanel {
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("<name>");
-        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 190, 20));
+        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 220, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed

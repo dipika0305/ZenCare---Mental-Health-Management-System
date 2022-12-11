@@ -29,8 +29,8 @@ public class MailNew {
         this.emailto = emailto;
         this.subject = subject;
         this.body = body;
-        String fromUser = "chouthaimitali@gmail.com";
-        String fromUserEmailPassword = "yjozjyhpzuyurovl";
+        String fromUser = "zencaredemo@gmail.com";
+        String fromUserEmailPassword = "tsmuikajwjybgupx";
         sendEmail(fromUser, fromUserEmailPassword, emailto, subject, body);
     }
  
@@ -48,14 +48,19 @@ public class MailNew {
 
         try{
             MimeMessage message = new MimeMessage(session);
+            
+            //draft the email
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
             message.setSubject(subject);
             message.setText(body);
             Transport transport = session.getTransport("smtp");
+            
+            //send the email
             transport.connect(host, from, pass);
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
+            System.out.println("Email sent successfully.");
             
         }
         catch (AddressException ae) {
