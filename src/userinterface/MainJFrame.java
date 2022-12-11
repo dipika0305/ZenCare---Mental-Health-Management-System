@@ -15,6 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import model.DB4OUtil.DB4OUtil;
+import model.validation;
 
 /**
  *
@@ -27,12 +28,13 @@ public class MainJFrame extends javax.swing.JFrame {
      */
     private EcoSys system;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
-
+    //validation validations;
     public MainJFrame() {
         
         initComponents();
         system = dB4OUtil.retrieveSystem();
         this.setSize(1500, 1004);
+        //validations = new validation();
         
         //jLabel4.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("userinterface\\b438ca80294986a80c960c712fb06434.jpg")).getImage().getScaledInstance(200, 50, Image.SCALE_SMOOTH)));
     }
@@ -154,9 +156,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void loginJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginJButtonActionPerformed
         // Get user name
-      
+      //var valid=true;
         String userName = userNameJTextField.getText();
         // Get Password
+        
          
         char[] passwordCharArray = passwordField.getPassword();
         String password = String.valueOf(passwordCharArray);

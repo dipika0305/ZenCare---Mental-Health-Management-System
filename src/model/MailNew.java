@@ -29,7 +29,7 @@ public class MailNew {
         this.emailto = emailto;
         this.subject = subject;
         this.body = body;
-        String fromUser = "dipika.mhnt@gmail.com";
+        String fromUser = "chouthaimitali@gmail.com";
         String fromUserEmailPassword = "yjozjyhpzuyurovl";
         sendEmail(fromUser, fromUserEmailPassword, emailto, subject, body);
     }
