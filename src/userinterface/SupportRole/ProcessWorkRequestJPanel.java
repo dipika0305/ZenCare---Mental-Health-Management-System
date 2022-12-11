@@ -130,7 +130,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
          
          
            try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Updated status for Support ","Support Team has allocated you a dietician, Hope to see you in good state!! ");
+                   MailNew m=new MailNew("johndoezencare@gmail.com","Updated status for Support ","Support Team has allocated you a dietician, Hope to see you in good state!! ");
                } catch (MessagingException ex) {
                    Logger.getLogger(DoctorWorkAreaMainJPanel.class.getName()).log(Level.SEVERE, null, ex);
                }

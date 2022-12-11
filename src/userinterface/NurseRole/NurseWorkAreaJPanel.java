@@ -26,7 +26,7 @@ import userinterface.DoctorRole.DoctorWorkAreaMainJPanel;
  * @author Mitali
  */
 public class NurseWorkAreaJPanel extends javax.swing.JPanel {
- private JPanel userProcessContainer;
+private JPanel userProcessContainer;
     private EcoSys business;
     private UserAccount userAccount;
     private OrgNurse nurseOrganization;
@@ -317,7 +317,7 @@ int selectedRow = workRequestJTable2.getSelectedRow();
                 request.setStatus("Pending");
                 request.setAppointmentTime(listSched.getSelectedItem());
                 try {
-                    MailNew m=new MailNew("steveaeddemo@gmail.com","Appointment with doctor: "+ userAccount,"Your appointment is confirmed at "+listSched.getSelectedItem());
+                    MailNew m=new MailNew("johndoezencare@gmail.com","Appointment with doctor: "+ userAccount,"Your appointment is confirmed at "+listSched.getSelectedItem());
                 } catch (MessagingException ex) {
                     Logger.getLogger(DoctorWorkAreaMainJPanel.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -331,8 +331,8 @@ int selectedRow = workRequestJTable2.getSelectedRow();
                 // btnBook.setVisible(true);
                 //listsched.setVisible(true);
 
-            }else
-            {
+            }
+            else{
                 JOptionPane.showMessageDialog(null,"No appointments!!");
             }
         }

@@ -414,9 +414,9 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
         //MailClass mailclass=new MailClass(txtemail.getText(),"You are registered to Brigham Hospital","Registeration-Brigham");
         // mailclass.sendmail();
         PatientInfoJPanel p = null;
-        String text = request.getEmail();
+        String email = request.getEmail();
         String name = request.getPatient();
-        MailNew m = new MailNew(text, name + " , Your bill has been processed", "Your claim has been " + status + ". The remaing amount is now " + amount);
+        MailNew m = new MailNew(email, name + " , Your bill has been processed.", "Your claim has been " + status + ". The remaing amount is now " + amount);
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.TextField Cardnumber;
