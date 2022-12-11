@@ -5,6 +5,7 @@
  */
 package userinterface.AdministrativeRole;
 
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
 import model.EcoSys;
 import model.Enterprise.Enterprise;
 import model.MailNew;
@@ -169,6 +170,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         txtPatient = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -369,6 +371,9 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
             }
         });
         add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 730, -1, -1));
+
+        jButton3.setText("jButton3");
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 420, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
@@ -668,6 +673,7 @@ public String returnName() {
     private javax.swing.JTextField cardholder;
     private javax.swing.JTextField cardno;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
