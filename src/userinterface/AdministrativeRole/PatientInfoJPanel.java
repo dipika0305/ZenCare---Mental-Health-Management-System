@@ -458,8 +458,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         } catch (Exception ex) {
             Logger.getLogger(PatientInfoJPanel.class.getName()).log(Level.SEVERE, null, ex);
         }
-//        JOptionPane.showMessageDialog(null, "Patient Registered!! ");
-//        }
+
         }
         catch (Exception ex){
             JOptionPane.showMessageDialog(null, "There is a problem in registration !! ");
@@ -467,7 +466,6 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         }
         txtName.setText("");
         txtAge.setText("");
-        //txtSttxtNameate.setText("");
         txtemail.setText("");
         cardno.setText("");
         cardholder.setText("");
@@ -487,7 +485,6 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
     txtPatient.setText("");
     txtName.setText("");
     txtAge.setText("");
-    //txtSttxtNameate.setText("");
     txtemail.setText("");
     cardno.setText("");
           cardholder.setText("");
@@ -648,21 +645,20 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnViewActionPerformed
 ///UNCOMMENT IT 
     
-public void sendemailto() throws Exception
-{
-   //MailClass mailclass=new MailClass(txtemail.getText(),"You are registered to Brigham Hospital","Registeration-Brigham");
- // mailclass.sendmail();
-    MailNew m=new MailNew("steveaeddemo@gmail.com","Welcome to "+ enterprise.getName(),"This is your welcome mail");
-MailNew m1=new MailNew("Doctoraedfall@gmail.com","Attention!-New Patient: "+ txtPatient.getText(),"New patient needs immediate attention.Please login to MENTHEAL.");
+    public void sendemailto() throws Exception{
+        //MailClass mailclass=new MailClass(txtemail.getText(),"You are registered to Brigham Hospital","Registeration-Brigham");
+        //mailclass.sendmail();
+        MailNew m=new MailNew(txtemail.getText(),"Welcome to "+ enterprise.getName(),"This is your welcome mail.");
+        MailNew m1=new MailNew("Doctoraedfall@gmail.com","Attention!-New Patient: "+ txtPatient.getText(),"New patient needs immediate attention.Please login to MENTHEAL.");
 
-}
+    }
 
-public String returnMail() {
-    return txtemail.getText();
-}
-public String returnName() {
-    return txtName.getText();
-}
+    public String returnMail() {
+        return txtemail.getText();
+    }
+    public String returnName() {
+        return txtName.getText();
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRehab;

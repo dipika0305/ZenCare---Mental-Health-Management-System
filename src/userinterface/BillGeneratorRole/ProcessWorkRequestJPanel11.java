@@ -383,7 +383,7 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
             this.status = request.getClaimstatus();
             this.amount = request.getBill();
               try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Updated Claim Status: "+ userAccount,"Your request is forwarded to govt for funds");
+                   MailNew m=new MailNew(Emailtxt.getText(),"Updated Claim Status: "+ userAccount,"Your request is forwarded to govt for funds");
                } catch (MessagingException ex) {
                    Logger.getLogger(BillGeneratorWorkAreaJPanel.class.getName()).log(Level.SEVERE, null, ex);
                }
@@ -400,7 +400,7 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
          
 
              try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Updated claim Status: "+ userAccount,"Your bill amount has been updated"+request.getBill());
+                   MailNew m=new MailNew(Emailtxt.getText(),"Updated claim Status: "+ userAccount,"Your bill amount has been updated"+request.getBill());
                } catch (MessagingException ex) {
                    Logger.getLogger(BillGeneratorWorkAreaJPanel.class.getName()).log(Level.SEVERE, null, ex);
                }
