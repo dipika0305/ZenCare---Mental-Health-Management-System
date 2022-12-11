@@ -105,14 +105,14 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         }
         else if(resultJTextField.getText().length()>25)
         {
-            JOptionPane.showMessageDialog(null,"DO not exceed 25 characters limit !!");
+            JOptionPane.showMessageDialog(null,"Do not exceed 25 characters limit!");
             return;
             
         }else {
              JOptionPane.showMessageDialog(null,"Requested");
             request.setMedicine(resultJTextField.getText());
         try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Prescription Ready","Your prescription is confirmed!!");
+                   MailNew m=new MailNew("johndoezencare@gmail.com","Prescription Ready","Your prescription is confirmed!");
                } catch (MessagingException ex) {
                    Logger.getLogger(DoctorWorkAreaMainJPanel.class.getName()).log(Level.SEVERE, null, ex);
                }

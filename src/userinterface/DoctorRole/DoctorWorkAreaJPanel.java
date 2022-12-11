@@ -270,7 +270,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 127, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 100, 30));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 230, 26));

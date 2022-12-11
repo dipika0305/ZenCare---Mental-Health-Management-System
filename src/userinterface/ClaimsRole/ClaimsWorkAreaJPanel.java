@@ -117,13 +117,13 @@ public class ClaimsWorkAreaJPanel extends javax.swing.JPanel {
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshJButton.setText("Refresh");
+        refreshJButton.setText("REFRESH");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 120, -1, -1));
 
         workRequestJTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -163,11 +163,11 @@ public class ClaimsWorkAreaJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, -1, 40));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, -1, 40));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("<name>");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 90, 110, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 250, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

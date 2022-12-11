@@ -150,7 +150,6 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
         assignJButton = new javax.swing.JButton();
         processJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
-        enterpriseLabel = new javax.swing.JLabel();
         valueLabel = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         updatedRequestJTable1 = new javax.swing.JTable();
@@ -236,11 +235,7 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 90, -1, -1));
-
-        enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 90, -1, -1));
 
         valueLabel.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         valueLabel.setToolTipText("");
@@ -284,7 +279,7 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
             updatedRequestJTable1.getColumnModel().getColumn(6).setResizable(false);
         }
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 590, 120));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 590, 120));
 
         pendingjCheckBox.setBackground(new java.awt.Color(255, 255, 255));
         pendingjCheckBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -363,7 +358,7 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable2.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 490, 120));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 430, 120));
 
         submitRequests.setBackground(new java.awt.Color(0, 153, 153));
         submitRequests.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -374,7 +369,7 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
                 submitRequestsActionPerformed(evt);
             }
         });
-        add(submitRequests, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 600, -1, -1));
+        add(submitRequests, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 600, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("MY CLAIMS");
@@ -386,7 +381,7 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
 
         processedClaims.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         processedClaims.setText("VIEW PROCESSED CLAIMS ");
-        add(processedClaims, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 410, 230, -1));
+        add(processedClaims, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 410, 230, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
@@ -582,7 +577,7 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
 //    }
     private void pendingjCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pendingjCheckBoxActionPerformed
         processingjCheckBox.setEnabled(false);
-        pendingClaimsjCheckBox1.setEnabled(false);        // TODO add your handling code here:
+        pendingClaimsjCheckBox1.setEnabled(false);      
     }//GEN-LAST:event_pendingjCheckBoxActionPerformed
 
     private void processingjCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processingjCheckBoxActionPerformed
@@ -657,7 +652,6 @@ public class BillGeneratorWorkAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignJButton;
-    private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -311,7 +311,7 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
          int selectedRow = workRequestJTable2.getSelectedRow();
            if (selectedRow < 0){
-                JOptionPane.showMessageDialog(null,"Select a appointment");
+                JOptionPane.showMessageDialog(null,"Select an appointment");
            
             //return;
         } else {
@@ -325,7 +325,7 @@ public class DoctorWorkAreaMainJPanel extends javax.swing.JPanel {
         request.setStatus("Pending");
         request.setAppointmentTime(listSched.getSelectedItem());
                 try {
-                   MailNew m=new MailNew("steveaeddemo@gmail.com","Appointment with doctor: "+ userAccount,"Your appointment is confirmed at "+listSched.getSelectedItem());
+                   MailNew m = new MailNew("johndoezencare@gmail.com","Appointment with doctor: "+ userAccount," Your appointment is confirmed at "+listSched.getSelectedItem());
                } catch (MessagingException ex) {
                    Logger.getLogger(DoctorWorkAreaMainJPanel.class.getName()).log(Level.SEVERE, null, ex);
                }
