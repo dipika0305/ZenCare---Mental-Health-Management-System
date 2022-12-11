@@ -179,26 +179,26 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 txtNameActionPerformed(evt);
             }
         });
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, 140, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 140, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("PATIENT INFORMATION");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 280, 30));
 
         txtAge.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 140, -1));
+        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 140, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel3.setText("Age");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel4.setText("State");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
 
         btnSubmit.setBackground(new java.awt.Color(0, 153, 153));
         btnSubmit.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -256,7 +256,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setText("EmailAddress");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, -1));
 
         txtemail.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         txtemail.addActionListener(new java.awt.event.ActionListener() {
@@ -264,7 +264,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 txtemailActionPerformed(evt);
             }
         });
-        add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 140, -1));
+        add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 140, -1));
 
         refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -300,7 +300,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Insurance Info :");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 145, -1));
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 145, 20));
 
         cardno.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         cardno.addActionListener(new java.awt.event.ActionListener() {
@@ -308,18 +308,18 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 cardnoActionPerformed(evt);
             }
         });
-        add(cardno, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 180, 140, -1));
+        add(cardno, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 190, 140, 30));
 
         cardholder.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(cardholder, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 230, 140, -1));
+        add(cardholder, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 240, 140, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel6.setText("Insurance Card Number");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 180, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, -1, 20));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel7.setText("Insurance Card Holder");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, -1, 20));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 240, -1, 20));
 
         statesJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         statesJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "choose state", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "WA", "WV", "WI", "WY" }));
@@ -328,11 +328,11 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 statesJComboBoxActionPerformed(evt);
             }
         });
-        add(statesJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 140, -1));
+        add(statesJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, 140, -1));
 
         label3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label3.setText("Demographic Info :");
-        add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 180, -1));
+        add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 180, -1));
 
         btnSearch.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnSearch.setForeground(new java.awt.Color(0, 153, 153));
@@ -347,9 +347,8 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         txtPatient.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(txtPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, 190, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 153));
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setForeground(new java.awt.Color(0, 153, 153));
         jButton1.setText("Back");
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
