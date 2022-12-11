@@ -144,7 +144,11 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/img.jpg"))); // NOI18N
         jLabel3.setMaximumSize(new java.awt.Dimension(1143, 546));
+<<<<<<< HEAD
         container.add(jLabel3, "card3");
+=======
+        container.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 900, 500));
+>>>>>>> c749b60fc43e45b82cf76019e458c344aea3dc71
 
         jSplitPane1.setRightComponent(container);
 
