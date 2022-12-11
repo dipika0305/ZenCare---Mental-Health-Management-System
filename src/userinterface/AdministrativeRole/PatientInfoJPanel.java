@@ -182,8 +182,9 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 140, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_pat.png"))); // NOI18N
         jLabel1.setText("PATIENT INFORMATION");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 280, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 330, 30));
 
         txtAge.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 140, -1));
