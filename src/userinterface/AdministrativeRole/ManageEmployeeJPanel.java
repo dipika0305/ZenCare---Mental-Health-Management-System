@@ -129,7 +129,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 540, 210, 36));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 520, 210, 36));
 
         organizationJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -152,7 +152,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 540, 210, 36));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 520, 210, 36));
 
         nameJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         nameJTextField.addActionListener(new java.awt.event.ActionListener() {

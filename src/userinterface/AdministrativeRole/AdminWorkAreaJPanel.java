@@ -89,7 +89,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         valueLabel.setText("<name>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 150, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 270, 30));
 
         manageEmployeeJButton1.setBackground(new java.awt.Color(0, 153, 153));
         manageEmployeeJButton1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N

@@ -107,7 +107,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 500, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 500, 120));
 
         addJButton.setBackground(new java.awt.Color(0, 153, 153));
         addJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
