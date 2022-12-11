@@ -16,7 +16,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 /**
  *
- * @author dipikam
+ * @author Mitali
  */
 public class MailNew {
     
