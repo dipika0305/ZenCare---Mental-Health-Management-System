@@ -63,7 +63,6 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1500, 1004));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -84,13 +83,18 @@ public class MainJFrame extends javax.swing.JFrame {
         userNameJTextField.setForeground(new java.awt.Color(0, 153, 153));
         userNameJTextField.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         userNameJTextField.setText("Enter your username");
-        jPanel1.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 362, 190, 40));
+        jPanel1.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 362, 170, 40));
 
         passwordField.setBackground(new java.awt.Color(255, 231, 161));
         passwordField.setFont(new java.awt.Font("Segoe UI", 2, 16)); // NOI18N
         passwordField.setForeground(new java.awt.Color(0, 153, 153));
-        passwordField.setText("Enter your password");
-        jPanel1.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 448, 190, 40));
+        passwordField.setText("password");
+        passwordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordFieldActionPerformed(evt);
+            }
+        });
+        jPanel1.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 448, 170, 40));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
@@ -228,6 +232,10 @@ public class MainJFrame extends javax.swing.JFrame {
         dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_logoutJButtonActionPerformed
 
+    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordFieldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -253,6 +261,7 @@ public class MainJFrame extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

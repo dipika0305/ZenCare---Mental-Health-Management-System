@@ -88,32 +88,6 @@
             <Property name="useNullLayout" type="boolean" value="true"/>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Perpetua Titling MT" size="14" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Selected Node:"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="250" y="40" width="-1" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="javax.swing.JLabel" name="lblSelectedNode">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Perpetua Titling MT" size="14" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="&lt;View_selected_node&gt;"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="370" y="40" width="-1" height="-1"/>
-                </Constraint>
-              </Constraints>
-            </Component>
             <Component class="javax.swing.JButton" name="btnManageNetwork">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -126,7 +100,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/CMmanage_emp.png"/>
+                  <Image iconType="3" name="/images/manage_net.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Manage Network"/>
               </Properties>
@@ -151,7 +125,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/CMbuilding.jpg"/>
+                  <Image iconType="3" name="/images/manage_ent.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Manage Enterprise"/>
               </Properties>
@@ -160,7 +134,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="260" y="450" width="269" height="-1"/>
+                  <AbsoluteConstraints x="260" y="280" width="269" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -176,7 +150,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/CMadmin.jpg"/>
+                  <Image iconType="3" name="/images/manage.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Manage Enterprise Admin"/>
               </Properties>
@@ -185,7 +159,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="260" y="300" width="270" height="-1"/>
+                  <AbsoluteConstraints x="260" y="420" width="270" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>

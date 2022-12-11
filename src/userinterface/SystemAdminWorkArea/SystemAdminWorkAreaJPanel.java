@@ -17,7 +17,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author dipikam
+ * @author Vidhi
  */
 public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -87,8 +87,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTree = new javax.swing.JTree();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        lblSelectedNode = new javax.swing.JLabel();
         btnManageNetwork = new javax.swing.JButton();
         btnManageEnterprise = new javax.swing.JButton();
         btnManageAdmin = new javax.swing.JButton();
@@ -122,20 +120,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.setPreferredSize(new java.awt.Dimension(500, 500));
         jPanel2.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        jLabel1.setText("Selected Node:");
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(250, 40, 104, 17);
-
-        lblSelectedNode.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
-        lblSelectedNode.setText("<View_selected_node>");
-        jPanel2.add(lblSelectedNode);
-        lblSelectedNode.setBounds(370, 40, 165, 17);
-
         btnManageNetwork.setBackground(new java.awt.Color(0, 153, 153));
         btnManageNetwork.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CMmanage_emp.png"))); // NOI18N
+        btnManageNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_net.png"))); // NOI18N
         btnManageNetwork.setText("Manage Network");
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,12 +131,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(btnManageNetwork);
-        btnManageNetwork.setBounds(260, 150, 269, 56);
+        btnManageNetwork.setBounds(260, 150, 269, 59);
 
         btnManageEnterprise.setBackground(new java.awt.Color(0, 153, 153));
         btnManageEnterprise.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CMbuilding.jpg"))); // NOI18N
+        btnManageEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_ent.png"))); // NOI18N
         btnManageEnterprise.setText("Manage Enterprise");
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,12 +144,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(btnManageEnterprise);
-        btnManageEnterprise.setBounds(260, 450, 269, 56);
+        btnManageEnterprise.setBounds(260, 280, 269, 59);
 
         btnManageAdmin.setBackground(new java.awt.Color(0, 153, 153));
         btnManageAdmin.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CMadmin.jpg"))); // NOI18N
+        btnManageAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage.png"))); // NOI18N
         btnManageAdmin.setText("Manage Enterprise Admin");
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +157,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(btnManageAdmin);
-        btnManageAdmin.setBounds(260, 300, 270, 56);
+        btnManageAdmin.setBounds(260, 420, 270, 59);
 
         jSplitPane.setRightComponent(jPanel2);
 
@@ -202,7 +190,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         
         DefaultMutableTreeNode selectedNode= (DefaultMutableTreeNode)jTree.getLastSelectedPathComponent();
         if(selectedNode!=null){
-            lblSelectedNode.setText(selectedNode.toString());
+            //lblSelectedNode.setText(selectedNode.toString());
         }
     }//GEN-LAST:event_jTreeValueChanged
 
@@ -211,12 +199,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageEnterprise;
     private javax.swing.JButton btnManageNetwork;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane;
     private javax.swing.JTree jTree;
-    private javax.swing.JLabel lblSelectedNode;
     // End of variables declaration//GEN-END:variables
 }

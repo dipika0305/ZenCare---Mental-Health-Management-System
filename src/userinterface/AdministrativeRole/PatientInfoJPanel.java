@@ -217,6 +217,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
@@ -251,7 +252,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(8).setResizable(false);
         }
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 550, 990, 150));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 1040, 110));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setText("EmailAddress");

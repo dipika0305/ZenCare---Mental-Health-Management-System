@@ -84,6 +84,7 @@ public class AllocatorWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
+                {null, null, null, null},
                 {null, null, null, null}
             },
             new String [] {
@@ -113,10 +114,10 @@ public class AllocatorWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 375, 140));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 520, 110));
 
         assignJButton.setBackground(new java.awt.Color(0, 153, 153));
-        assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assignJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         assignJButton.setForeground(new java.awt.Color(255, 255, 255));
         assignJButton.setText("ASSIGN TO ME");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -124,10 +125,10 @@ public class AllocatorWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 210, 37));
 
         processJButton.setBackground(new java.awt.Color(0, 153, 153));
-        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         processJButton.setForeground(new java.awt.Color(255, 255, 255));
         processJButton.setText("PROCESS");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -135,7 +136,7 @@ public class AllocatorWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 390, 130, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, 210, 37));
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
