@@ -160,7 +160,7 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 670, 160, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 700, 160, -1));
 
         PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setName(""); // NOI18N
@@ -275,7 +275,7 @@ public class ProcessWorkRequestJPanel11 extends javax.swing.JPanel {
                 updateRequestJBTNActionPerformed(evt);
             }
         });
-        add(updateRequestJBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 670, -1, -1));
+        add(updateRequestJBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 700, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
