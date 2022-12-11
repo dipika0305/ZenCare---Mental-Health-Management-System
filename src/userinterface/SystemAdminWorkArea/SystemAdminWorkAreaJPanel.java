@@ -17,7 +17,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author dipikam
+ * @author Vidhi
  */
 public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -190,7 +190,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         
         DefaultMutableTreeNode selectedNode= (DefaultMutableTreeNode)jTree.getLastSelectedPathComponent();
         if(selectedNode!=null){
-            lblSelectedNode.setText(selectedNode.toString());
+            //lblSelectedNode.setText(selectedNode.toString());
         }
     }//GEN-LAST:event_jTreeValueChanged
 
