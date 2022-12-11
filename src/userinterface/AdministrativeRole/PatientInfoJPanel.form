@@ -130,7 +130,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="120" y="550" width="990" height="150"/>
+          <AbsoluteConstraints x="90" y="550" width="1040" height="110"/>
         </Constraint>
       </Constraints>
 
@@ -142,7 +142,7 @@
               <Font name="Arial" size="13" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="9" rowCount="4">
+              <Table columnCount="9" rowCount="5">
                 <Column editable="false" title="PatientWorkrequest" type="java.lang.Object"/>
                 <Column editable="false" title="Patient" type="java.lang.Object"/>
                 <Column editable="false" title="Doctor" type="java.lang.Object"/>
