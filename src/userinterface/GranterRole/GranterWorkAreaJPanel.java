@@ -146,13 +146,14 @@ public class GranterWorkAreaJPanel extends javax.swing.JPanel {
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshJButton.setText("Refresh");
+        refreshJButton.setText("REFRESH");
+        refreshJButton.setToolTipText("");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("GRANTER");

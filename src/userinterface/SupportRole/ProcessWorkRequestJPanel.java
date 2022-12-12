@@ -89,7 +89,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         patientname.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         patientname.setText("<name>");
-        add(patientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 170, -1));
+        add(patientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 230, -1));
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Patient Name");

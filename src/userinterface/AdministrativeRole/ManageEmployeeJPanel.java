@@ -118,7 +118,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 480, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 480, 100));
 
         addJButton.setBackground(new java.awt.Color(0, 153, 153));
         addJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
@@ -155,11 +155,11 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         organizationJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, 230, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 230, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel3.setText("Organization");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage.png"))); // NOI18N

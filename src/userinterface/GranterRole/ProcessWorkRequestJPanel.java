@@ -155,13 +155,13 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 153, 153));
-        jButton1.setText("Refresh");
+        jButton1.setText("REFRESH");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 120, -1, -1));
 
         PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setForeground(new java.awt.Color(0, 0, 0));

@@ -245,46 +245,46 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 440, 97));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 440, 97));
 
         requestTestJButton.setBackground(new java.awt.Color(0, 153, 153));
         requestTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
-        requestTestJButton.setText("Request Test");
+        requestTestJButton.setText("REQUEST TEST");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 150, -1));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 160, -1));
 
         refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshTestJButton.setText("Refresh");
+        refreshTestJButton.setText("REFRESH");
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 50, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 100, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 90, 30));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 230, 26));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 230, 26));
 
         requestMedJButton.setBackground(new java.awt.Color(0, 153, 153));
         requestMedJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         requestMedJButton.setForeground(new java.awt.Color(255, 255, 255));
-        requestMedJButton.setText("Request Medicine");
+        requestMedJButton.setText("REQUEST MEDICINE");
         requestMedJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestMedJButtonActionPerformed(evt);
             }
         });
-        add(requestMedJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, -1, -1));
+        add(requestMedJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 480, -1, -1));
 
         workRequestJTable1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -322,7 +322,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable1.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 440, 97));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 440, 97));
 
         workRequestJTable2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -360,7 +360,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable2.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 570, 440, 96));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 570, 440, 96));
 
         assignJButton.setBackground(new java.awt.Color(0, 153, 153));
         assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -371,7 +371,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 690, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 690, -1, -1));
 
         processJButton.setBackground(new java.awt.Color(0, 153, 153));
         processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -382,7 +382,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 690, 130, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 690, 130, -1));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -392,7 +392,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 690, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 690, -1, -1));
 
         btnDashboard.setBackground(new java.awt.Color(0, 153, 153));
         btnDashboard.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -403,7 +403,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 btnDashboardActionPerformed(evt);
             }
         });
-        add(btnDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, -1));
+        add(btnDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, -1, -1));
 
         btnDashboard1.setBackground(new java.awt.Color(0, 153, 153));
         btnDashboard1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -414,7 +414,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 btnDashboard1ActionPerformed(evt);
             }
         });
-        add(btnDashboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 210, -1));
+        add(btnDashboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 210, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

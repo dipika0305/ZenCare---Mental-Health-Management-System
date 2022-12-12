@@ -192,13 +192,13 @@ private JPanel userProcessContainer;
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshJButton.setText("Refresh");
+        refreshJButton.setText("REFRESH");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, -1, -1));
 
         workRequestJTable2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -232,7 +232,7 @@ private JPanel userProcessContainer;
         add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, -1, 100));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 150, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 210, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");

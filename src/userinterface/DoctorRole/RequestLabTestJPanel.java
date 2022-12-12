@@ -99,7 +99,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 210, -1));
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        label2.setText("Patient Name :");
+        label2.setText("Patient Name");
         add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 110, -1));
     }// </editor-fold>//GEN-END:initComponents
 

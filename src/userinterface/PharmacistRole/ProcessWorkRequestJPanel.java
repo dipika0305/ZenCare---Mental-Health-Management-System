@@ -61,11 +61,11 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 200, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 200, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Medicine");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 80, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 80, 30));
 
         resultJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 220, 30));

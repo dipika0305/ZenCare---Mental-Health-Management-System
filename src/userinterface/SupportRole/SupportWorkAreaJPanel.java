@@ -149,13 +149,13 @@ public class SupportWorkAreaJPanel extends javax.swing.JPanel {
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshJButton.setText("Refresh");
+        refreshJButton.setText("REFRESH");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
@@ -163,7 +163,7 @@ public class SupportWorkAreaJPanel extends javax.swing.JPanel {
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 160, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 220, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

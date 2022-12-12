@@ -87,8 +87,9 @@ public class ProcessWorkRequestJPanel1 extends javax.swing.JPanel {
         add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, 220, -1));
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        label2.setText("Patient Name :");
+        label2.setText("Patient Name");
         add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 110, -1));
+        label2.getAccessibleContext().setAccessibleName("Patient Name");
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
