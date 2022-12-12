@@ -255,6 +255,7 @@ public class PatientInfoJPanel extends javax.swing.JPanel {
         refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(0, 153, 153));
         refreshTestJButton.setText("Refresh");
+        refreshTestJButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshTestJButtonActionPerformed(evt);

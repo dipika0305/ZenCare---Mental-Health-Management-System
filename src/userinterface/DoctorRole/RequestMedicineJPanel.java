@@ -55,6 +55,7 @@ public class RequestMedicineJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -68,7 +69,7 @@ public class RequestMedicineJPanel extends javax.swing.JPanel {
                 requestMedJButtonActionPerformed(evt);
             }
         });
-        add(requestMedJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, -1, -1));
+        add(requestMedJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Message");
@@ -85,7 +86,7 @@ public class RequestMedicineJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 160, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, 160, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
@@ -94,6 +95,10 @@ public class RequestMedicineJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("<name>");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, 230, 30));
+
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel3.setText("MEDICINE REQUEST");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestMedJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestMedJButtonActionPerformed
@@ -157,6 +162,7 @@ public class RequestMedicineJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField messageJTextField;
     private javax.swing.JButton requestMedJButton;
     // End of variables declaration//GEN-END:variables

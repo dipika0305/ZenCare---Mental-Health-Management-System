@@ -143,8 +143,18 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setLayout(new java.awt.CardLayout());
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/img.jpg"))); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/im.jpg"))); // NOI18N
+        jLabel3.setText("ZenCare: Mental Healthcare Management System");
+        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel3.setAlignmentY(7.0F);
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIconTextGap(75);
         jLabel3.setMaximumSize(new java.awt.Dimension(1143, 546));
+        jLabel3.setMinimumSize(new java.awt.Dimension(1700, 1009));
+        jLabel3.setPreferredSize(new java.awt.Dimension(1700, 1009));
+        jLabel3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         container.add(jLabel3, "card3");
 
         jSplitPane1.setRightComponent(container);

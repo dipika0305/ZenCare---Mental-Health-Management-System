@@ -107,7 +107,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 500, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 500, 120));
 
         addJButton.setBackground(new java.awt.Color(0, 153, 153));
         addJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
@@ -118,15 +118,15 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 460, 210, 37));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, 210, 37));
 
         organizationJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 220, -1));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 220, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Organization Type ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, -1, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, -1, 20));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -136,12 +136,12 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, 210, 37));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, 210, 37));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_org.png"))); // NOI18N
         jLabel2.setText("MANAGE ORGANIZATION");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJButtonActionPerformed
