@@ -7,12 +7,10 @@ package model.Role;
 
 import model.EcoSys;
 import model.Enterprise.Enterprise;
-import model.Organization.OrgBillings;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-//import userinterface.BillGeneratorRole.BillGeneratorWorkAreaJPanel;
-//import userinterface.DoctorRole.DoctorWorkAreaJPanel;
+import userinterface.BillGeneratorRole.BillGeneratorWorkAreaJPanel;
 
 /**
  *
@@ -23,7 +21,7 @@ public class RoleBillGenerator extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return null;
+        return new BillGeneratorWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
     }
     
 }

@@ -66,8 +66,8 @@ public class OrganizationDirectory {
             organization = new OrgNurse();
             organizationList.add(organization);
         }
-        else if (type.getValue().equals(Type.Suppliments.getValue())){
-            organization = new OrgSuppliments();
+        else if (type.getValue().equals(Type.Support.getValue())){
+            organization = new OrgSupport();
             organizationList.add(organization);
         }
         return organization;

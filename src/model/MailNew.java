@@ -18,6 +18,7 @@ import javax.mail.internet.MimeMessage;
  *
  * @author dipikam
  */
+//Email verification
 public class MailNew {
     
     Session mailSession;
@@ -25,67 +26,50 @@ public class MailNew {
     String subject;
     String body;
     
-    public MailNew(String emailto,String subject,String body) throws MessagingException {
-        this.emailto=emailto;
-        this.subject=subject;
-        this.body=body;
-        setMailServerProperties();
-        sendEmail();
+    public MailNew(String emailto, String subject, String body) throws MessagingException {
+        this.emailto = emailto;
+        this.subject = subject;
+        this.body = body;
+        String fromUser = "zencaredemo@gmail.com";
+        String fromUserEmailPassword = "tsmuikajwjybgupx";
+        sendEmail(fromUser, fromUserEmailPassword, emailto, subject, body);
     }
+ 
+    private void sendEmail(String from, String pass, String to, String subject, String body) throws AddressException, MessagingException {
+        
+        Properties props = System.getProperties();
+        String host = "smtp.gmail.com";
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", host);
+        props.put("mail.smtp.user", from);
+        props.put("mail.smtp.password", pass);
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
+        Session session = Session.getDefaultInstance(props);
 
-    private void setMailServerProperties()
-    {
-        Properties emailProperties = System.getProperties();
-        emailProperties.put("mail.smtp.starttls.enable", "true");
-        emailProperties.put("mail.smtp.port", "587");
-        emailProperties.put("mail.smtp.auth", "true");
-        
-        mailSession = Session.getDefaultInstance(emailProperties, null);
-    }
- 
-    private MimeMessage draftEmailMessage() throws AddressException, MessagingException
-    {
-        String[] toEmails = { emailto };
-        String emailSubject = subject;
-        String emailBody = body;
-        MimeMessage emailMessage = new MimeMessage(mailSession);
-        /**
-         * Set the mail recipients
-         * */
-        for(int i = 0; i < toEmails.length; i++){
-            emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(toEmails[i]));
+        try{
+            MimeMessage message = new MimeMessage(session);
+            
+            //draft the email
+            message.setFrom(new InternetAddress(from));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+            message.setSubject(subject);
+            message.setText(body);
+            Transport transport = session.getTransport("smtp");
+            
+            //send the email
+            transport.connect(host, from, pass);
+            transport.sendMessage(message, message.getAllRecipients());
+            transport.close();
+            System.out.println("Email sent successfully.");
+            
         }
-        emailMessage.setSubject(emailSubject);
-        /**
-         * If sending HTML mail
-         * */
-        emailMessage.setContent(emailBody, "text/html");
-        /**
-         * If sending only text mail
-         * */
-        //emailMessage.setText(emailBody);// for a text email
-        return emailMessage;
-    }
- 
-    private void sendEmail() throws AddressException, MessagingException
-    {
-        
-        String fromUser = "demomailaed@gmail.com";
-        String fromUserEmailPassword = "demomailaed1!";
- 
-        String emailHost = "smtp.gmail.com";
-        Transport transport = mailSession.getTransport("smtp");
-        transport.connect(emailHost, fromUser, fromUserEmailPassword);
-        /**
-         * Draft the message
-         * */
-        MimeMessage emailMessage = draftEmailMessage();
-        /**
-         * Send the mail
-         * */
-        transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
-        transport.close();
-        System.out.println("Email sent successfully.");
+        catch (AddressException ae) {
+            ae.printStackTrace();
+        }
+        catch (MessagingException me) {
+            me.printStackTrace();
+        }
     }
 }
     

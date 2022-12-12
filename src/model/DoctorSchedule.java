@@ -11,6 +11,7 @@ import java.util.ArrayList;
  *
  * @author dipikam
  */
+//Store the Doctor's Schedule in an ArrayList
 public class DoctorSchedule {
     ArrayList<String>schedDir;
 

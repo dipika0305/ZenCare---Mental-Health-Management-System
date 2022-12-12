@@ -11,17 +11,17 @@ import model.Organization.OrgDoctor;
 import model.Organization.Organization;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-//import userinterface.RoleDoctor.DoctorWorkAreaMainJPanel;
+import userinterface.DoctorRole.DoctorWorkAreaMainJPanel;
 
 /**
  *
  * @author dipikam
  */
 public class RoleDoctor extends Role{
- public DoctorSchedule sched=new DoctorSchedule();
+ public DoctorSchedule schedule =new DoctorSchedule();
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return null;
+        return new DoctorWorkAreaMainJPanel(userProcessContainer, account, (OrgDoctor)organization, enterprise, business,schedule);
     }
     
     

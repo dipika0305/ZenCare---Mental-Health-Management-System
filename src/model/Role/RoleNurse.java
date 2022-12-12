@@ -12,7 +12,7 @@ import model.Organization.Organization;
 import model.Room;
 import model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-//import userinterface.RoleNurse.NurseWorkAreaJPanel;
+import userinterface.NurseRole.NurseWorkAreaJPanel;
 
 
 /**
@@ -20,10 +20,10 @@ import javax.swing.JPanel;
  * @author Vidhi
  */
 public class RoleNurse extends Role{
- public Room sched=new Room();
+ public Room schedule = new Room();
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-         return null;
+         return new NurseWorkAreaJPanel(userProcessContainer,account, (OrgNurse)organization, enterprise, business, schedule);
  
     }
     
