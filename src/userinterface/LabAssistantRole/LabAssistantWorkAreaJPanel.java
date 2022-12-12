@@ -141,7 +141,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshJButton.setText("Refresh");
+        refreshJButton.setText("REFRESH");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
@@ -155,11 +155,11 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("<name>");
-        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, 130, 20));
+        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 220, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

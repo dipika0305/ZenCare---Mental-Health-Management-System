@@ -146,20 +146,20 @@ public class MedicalCoderWorkAreaJPanel extends javax.swing.JPanel {
 
         refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(0, 153, 153));
-        refreshTestJButton.setText("Refresh");
+        refreshTestJButton.setText("REFRESH");
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 140, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 90, 30));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 158, 26));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 220, 26));
 
         dashboardJButton.setBackground(new java.awt.Color(0, 153, 153));
         dashboardJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N

@@ -114,7 +114,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         submitJButton.setBackground(new java.awt.Color(0, 153, 153));
         submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
-        submitJButton.setText("Submit Result");
+        submitJButton.setText("SUBMIT RESULT");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
@@ -132,7 +132,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
-        backJButton.setText("Back");
+        backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
@@ -187,7 +187,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         calculatebtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         calculatebtn.setForeground(new java.awt.Color(0, 153, 153));
-        calculatebtn.setText("Calculate");
+        calculatebtn.setText("CALCULATE");
         calculatebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calculatebtnActionPerformed(evt);
@@ -204,13 +204,13 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         refreshBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshBtn.setForeground(new java.awt.Color(0, 153, 153));
-        refreshBtn.setText("Refresh");
+        refreshBtn.setText("REFRESH");
         refreshBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshBtnActionPerformed(evt);
             }
         });
-        add(refreshBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, -1, -1));
+        add(refreshBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 110, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel3.setText("Message");

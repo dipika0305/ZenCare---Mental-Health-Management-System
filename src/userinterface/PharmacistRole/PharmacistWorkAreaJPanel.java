@@ -176,11 +176,11 @@ public class PharmacistWorkAreaJPanel extends javax.swing.JPanel {
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 150, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 230, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, -1, -1));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
