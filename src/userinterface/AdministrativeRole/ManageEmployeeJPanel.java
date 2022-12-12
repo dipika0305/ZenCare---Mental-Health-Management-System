@@ -121,7 +121,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 480, 100));
 
         addJButton.setBackground(new java.awt.Color(0, 153, 153));
-        addJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        addJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addJButton.setForeground(new java.awt.Color(255, 255, 255));
         addJButton.setText("CREATE EMPLOYEE");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +129,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 520, 210, 36));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 517, 200, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Name");
@@ -143,7 +143,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 520, 210, 36));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 517, 200, -1));
 
         nameJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         nameJTextField.addActionListener(new java.awt.event.ActionListener() {

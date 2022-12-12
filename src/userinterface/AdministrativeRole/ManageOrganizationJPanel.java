@@ -107,10 +107,10 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 500, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 500, 120));
 
         addJButton.setBackground(new java.awt.Color(0, 153, 153));
-        addJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        addJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addJButton.setForeground(new java.awt.Color(255, 255, 255));
         addJButton.setText("ADD ORGANIZATION");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +118,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, 210, 37));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 437, 180, -1));
 
         organizationJComboBox.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -128,7 +128,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         jLabel1.setText("Organization Type ");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, -1, 20));
 
-        backJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
         backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +136,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, 210, 37));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 437, 180, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_org.png"))); // NOI18N
