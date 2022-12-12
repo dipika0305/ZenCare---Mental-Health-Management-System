@@ -32,6 +32,5 @@ The patient is able to book an appointment. The doctor can request test to the l
 https://tinyurl.com/4nt68ksv
 
 
-# Sequence Diagram URL: https://tinyurl.com/4nt68ksv \
-
+# Sequence Diagram URL:
 https://lucid.app/lucidchart/c5aa8e07-15f2-445a-b76a-c8e5cfebcd06/edit?invitationId=inv_9ff720b6-95f6-4ac5-983e-22ebd8b7c468&page=0_0#
