@@ -125,8 +125,9 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 560, 100, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage_net.png"))); // NOI18N
         jLabel6.setText("MANAGE NETWORK ");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
