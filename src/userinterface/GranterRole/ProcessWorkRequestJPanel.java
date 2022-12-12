@@ -92,7 +92,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 150, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 530, 150, -1));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -112,7 +112,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 540, 150, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 530, 150, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setText("GRANTER RESULT");
