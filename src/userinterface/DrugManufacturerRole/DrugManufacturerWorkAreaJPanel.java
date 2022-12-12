@@ -112,7 +112,7 @@ public class DrugManufacturerWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 420, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 420, 100));
 
         assignJButton.setBackground(new java.awt.Color(0, 153, 153));
         assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -123,7 +123,7 @@ public class DrugManufacturerWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, -1, -1));
 
         processJButton.setBackground(new java.awt.Color(0, 153, 153));
         processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -134,7 +134,7 @@ public class DrugManufacturerWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 130, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 130, -1));
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -144,11 +144,11 @@ public class DrugManufacturerWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 100, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 100, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("DRUG MANUFCTURER ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
