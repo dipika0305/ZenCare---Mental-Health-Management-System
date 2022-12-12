@@ -12,6 +12,7 @@ import model.Role.RoleAdmin;
 import model.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -96,6 +97,8 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         passwordJPasswordField = new javax.swing.JPasswordField();
         backJButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -147,6 +150,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
 
         usernameJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        usernameJTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usernameJTextFieldActionPerformed(evt);
+            }
+        });
         add(usernameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, 136, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -180,6 +188,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, -1));
 
         passwordJPasswordField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        passwordJPasswordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordJPasswordFieldActionPerformed(evt);
+            }
+        });
         add(passwordJPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 134, -1));
 
         backJButton.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
@@ -190,11 +203,24 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 650, 120, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 680, 120, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel6.setText("MANAGE ENTERPRISE ADMIN");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, -1, -1));
+
+        jButton1.setText("Delete");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 630, -1, -1));
+
+        jButton2.setText("Update");
+        jButton2.setMaximumSize(new java.awt.Dimension(84, 26));
+        jButton2.setPreferredSize(new java.awt.Dimension(83, 26));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 630, 90, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
@@ -232,10 +258,32 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        int selectRowIndex=enterpriseJTable.getSelectedRow();
+        if(selectRowIndex<0){
+            JOptionPane.showMessageDialog(this, "Please update a row to select");
+            return;
+        }
+        DefaultTableModel model=(DefaultTableModel)enterpriseJTable.getModel();
+        Enterprise selectedDetails=(Enterprise) model.getValueAt(selectRowIndex, 3);
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void usernameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameJTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usernameJTextFieldActionPerformed
+
+    private void passwordJPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJPasswordFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordJPasswordFieldActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JComboBox enterpriseJComboBox;
     private javax.swing.JTable enterpriseJTable;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

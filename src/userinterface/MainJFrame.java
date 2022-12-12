@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import model.DB4OUtil.DB4OUtil;
-import model.validation;
+
 
 /**
  *
