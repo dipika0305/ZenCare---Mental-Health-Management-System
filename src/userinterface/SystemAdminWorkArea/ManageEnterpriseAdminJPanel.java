@@ -206,8 +206,9 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 680, 120, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/manage.png"))); // NOI18N
         jLabel6.setText("MANAGE ENTERPRISE ADMIN");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, -1, -1));
 
         jButton1.setText("Delete");
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 630, -1, -1));
