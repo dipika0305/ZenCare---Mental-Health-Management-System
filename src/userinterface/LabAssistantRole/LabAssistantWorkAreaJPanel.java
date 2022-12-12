@@ -115,7 +115,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 470, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 470, 120));
 
         assignJButton.setBackground(new java.awt.Color(0, 153, 153));
         assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -126,7 +126,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, -1, -1));
 
         processJButton.setBackground(new java.awt.Color(0, 153, 153));
         processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -137,7 +137,7 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 130, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 380, 130, -1));
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -147,19 +147,19 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("LAB ASSISTANT ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, -1, -1));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
 
         name.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         name.setText("<name>");
-        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 130, 20));
+        add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, 130, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

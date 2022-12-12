@@ -77,15 +77,14 @@ public class ProcessNurseRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, 280, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, 280, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Message");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, -1, 30));
 
-        careTakeInfo.setBackground(null);
         careTakeInfo.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(careTakeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 210, -1));
+        add(careTakeInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 210, -1));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -95,7 +94,7 @@ public class ProcessNurseRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 380, -1, -1));
 
         submitJButton1.setBackground(new java.awt.Color(0, 153, 153));
         submitJButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -106,32 +105,31 @@ public class ProcessNurseRequestJPanel extends javax.swing.JPanel {
                 submitJButton1ActionPerformed(evt);
             }
         });
-        add(submitJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, 280, -1));
+        add(submitJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 280, -1));
 
-        dieticianInfo.setBackground(null);
         dieticianInfo.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         dieticianInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dieticianInfoActionPerformed(evt);
             }
         });
-        add(dieticianInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 210, 20));
+        add(dieticianInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 210, 20));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel2.setText("Message");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel3.setText("NURSE ");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, -1, -1));
 
         patientname.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         patientname.setText("<name>");
-        add(patientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 190, -1));
+        add(patientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 190, -1));
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Patient Name");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 100, -1));
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 100, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

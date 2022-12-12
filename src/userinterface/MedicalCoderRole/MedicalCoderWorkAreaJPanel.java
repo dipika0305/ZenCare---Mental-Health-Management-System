@@ -131,7 +131,7 @@ public class MedicalCoderWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, 120));
 
         requestTestJButton.setBackground(new java.awt.Color(0, 153, 153));
         requestTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -142,7 +142,7 @@ public class MedicalCoderWorkAreaJPanel extends javax.swing.JPanel {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, -1, 30));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, -1, 30));
 
         refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshTestJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -152,14 +152,14 @@ public class MedicalCoderWorkAreaJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 90, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 90, 30));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 158, 26));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 158, 26));
 
         dashboardJButton.setBackground(new java.awt.Color(0, 153, 153));
         dashboardJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -170,11 +170,11 @@ public class MedicalCoderWorkAreaJPanel extends javax.swing.JPanel {
                 dashboardJButtonActionPerformed(evt);
             }
         });
-        add(dashboardJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 400, 140, 30));
+        add(dashboardJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 140, 30));
 
         enterpriseLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         enterpriseLabel2.setText("MEDICAL CODER");
-        add(enterpriseLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 210, 40));
+        add(enterpriseLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 210, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

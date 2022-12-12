@@ -67,14 +67,14 @@ public class RequestDiseaseInfoJPanel extends javax.swing.JPanel {
                 requestDetailsJButtonActionPerformed(evt);
             }
         });
-        add(requestDetailsJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, -1, -1));
+        add(requestDetailsJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Ailment Details");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 219, -1, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, -1, 30));
 
         messageJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 220, 200, 30));
+        add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, 200, 30));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -84,15 +84,15 @@ public class RequestDiseaseInfoJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 160, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 160, -1));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 190, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 190, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 90, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 90, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestDetailsJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestDetailsJButtonActionPerformed

@@ -57,14 +57,14 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, -1, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 310, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Result");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 50, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 50, 30));
 
         resultJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 220, 160, -1));
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 160, -1));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -74,19 +74,19 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 140, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 140, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setText("LAB ASSISTANT RESULT");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
 
         PatientName.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         PatientName.setName(""); // NOI18N
-        add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 160, -1));
+        add(PatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 160, -1));
 
         label2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         label2.setText("Patient Name");
-        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 110, -1));
+        add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 110, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
