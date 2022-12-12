@@ -123,7 +123,7 @@ public class SupportWorkAreaJPanel extends javax.swing.JPanel {
             workRequestJTable.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, 460, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 460, 110));
 
         assignJButton.setBackground(new java.awt.Color(0, 153, 153));
         assignJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -134,7 +134,7 @@ public class SupportWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 450, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, -1, -1));
 
         processJButton.setBackground(new java.awt.Color(0, 153, 153));
         processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -145,7 +145,7 @@ public class SupportWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 130, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 130, -1));
 
         refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -155,15 +155,15 @@ public class SupportWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 210, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, -1, -1));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, -1, -1));
 
         valueLabel.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, 160, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 160, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

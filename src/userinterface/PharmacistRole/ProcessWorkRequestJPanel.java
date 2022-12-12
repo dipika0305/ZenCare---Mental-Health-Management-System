@@ -61,14 +61,14 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 200, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 200, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Medicine");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 179, 80, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 80, 30));
 
         resultJTextField.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 220, 30));
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 220, 30));
 
         backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
@@ -78,11 +78,11 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setText("PHARMACIST MEDICINE");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
