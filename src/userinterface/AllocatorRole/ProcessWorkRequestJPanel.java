@@ -49,7 +49,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         submitJButton.setBackground(new java.awt.Color(0, 153, 153));
-        submitJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        submitJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("SUBMIT RESULT");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -57,14 +57,14 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 210, 37));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 170, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel1.setText("Result");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, -1, -1));
         add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 190, -1));
 
-        backJButton.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        backJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(0, 153, 153));
         backJButton.setText("BACK");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +72,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 210, 37));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 170, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
