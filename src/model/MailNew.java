@@ -18,6 +18,7 @@ import javax.mail.internet.MimeMessage;
  *
  * @author dipikam
  */
+//Email verification
 public class MailNew {
     
     Session mailSession;
